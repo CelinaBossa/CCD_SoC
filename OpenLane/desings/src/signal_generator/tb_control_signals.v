@@ -25,7 +25,7 @@ module testbench;
     // Proceso de inicialización
     initial begin
         // Abrir el archivo de salida y habilitar el rastreo
-        $dumpfile("control_signals_wf.vcd");
+        $dumpfile("wf_control_signals.vcd");
         $dumpvars(0, testbench);
 
         // Inicializar señales

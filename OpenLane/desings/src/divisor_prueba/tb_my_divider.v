@@ -17,7 +17,7 @@ module testbench;
   // instanciar el reloj de entrada con un periodo de 10 unidades de tiempo
     
 	initial begin
-	  $dumpfile("my_divider_tb.vcd");
+	  $dumpfile("wf_my_divider.vcd");
           $dumpvars(0, testbench);  // Dump todas las señales de este módulo
 
     	  clk_in = 0;

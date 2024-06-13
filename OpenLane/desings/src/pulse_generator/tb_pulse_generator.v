@@ -56,7 +56,7 @@ module tb_pulse_generator;
     initial begin
         $monitor("Time = %0t: clk = %b, rst = %b, DIVIDE_BY_N = %d, comb_out = %b, sync_out = %b", 
                  $time, clk, rst, DIVIDE_BY_N, comb_out, sync_out);
-        $dumpfile("pulse_generator_wf.vcd");
+        $dumpfile("wf_pulse_generator.vcd"); //se le da esta convencion ya que son las formas de onda (WaveForms)
         $dumpvars(0, tb_pulse_generator);
     end
 

@@ -18,8 +18,8 @@ module test_signal_generator;
     );
 
     initial begin
-            $dumpfile("signal_generatir_wf.vcd");
-        $dumpvars(0, testbench_2);
+            $dumpfile("wf_signal_generatir.vcd");
+        $dumpvars(0, test_signal_generator);
         // Initialize Inputs
         clk = 0;
         sel = 4'b0000;
@@ -36,10 +36,9 @@ module test_signal_generator;
     end
 
     // Mostrar resultados en cada cambio de reloj
-    always @(posedge clk) begin
-        $display("Time: %d, max_val: %b, count: %d, phi_p: %b, phi_l1: %b, phi_l2: %b, phi_r: %b",
-        $time, max_val, uut.count, phi_p, phi_l1, phi_l2, phi_r);
-    end
+    //always @(posedge clk) begin
+        //$display("Time: %d, max_val: %b, count: %d, phi_p: %b, phi_l1: %b, phi_l2: %b, phi_r: %b", $time, max_val, uut.count, phi_p, phi_l1, phi_l2, phi_r);
+    //end
       
     // Clock Generation
     always #10 clk = ~clk;
