@@ -1,6 +1,7 @@
 `timescale 1ns/1ps
 
-module clk_gen(
+
+module squared_wave_gen(
     input enable,
     output reg clk);
 
@@ -66,5 +67,75 @@ module clk_gen(
             clk = 0;
         end
     end
+
+endmodule
+
+
+module pulse_generator(
+    input clk,
+    input rst,
+    input [15:0] DIVIDE_BY_N,
+    output comb_out, 
+    output reg sync_out
+);
+
+reg [15:0] count = 0; // Corregir la declaración del vector
+
+always @(posedge clk) begin
+    if (rst) begin
+        count <= 0;
+    end else if (count < DIVIDE_BY_N-1) begin
+        count <= count + 1;
+    end else begin
+        count <= 0;
+    end
+end
+
+// Salida combinacional
+assign comb_out = (count == DIVIDE_BY_N-1) ? 1'b1 : 1'b0;
+
+// Salida sincrónica
+always @(posedge clk) begin
+    sync_out <= (count == DIVIDE_BY_N-1) ? 1'b1 : 1'b0;
+end
+
+endmodule
+
+
+module digital_cs(
+    input reg enable,
+    input reg clk,
+    input [3:0] f_select,
+    output  phi_p,
+    output  phi_l2,
+    output  phi_l1,
+    output  phi_r);
+
+    //Variables a utilizar 
+
+    //Generamos las señales requeridas con el modulo squared_wave_gen
+    // Phi_L1
+    squared_wave_gen #(.FREQ(250), .PHASE(180), .DUTY(50)) gen_phi_l1(.enable(enable), .clk(phi_l1));
+    // Phi_L2
+    squared_wave_gen #(.FREQ(250), .PHASE(0), .DUTY(50)) gen_phi_l2(.enable(enable), .clk(phi_l2));
+    // Phi_r
+    squared_wave_gen #(.FREQ(250), .PHASE(0), .DUTY(25)) gen_phi_r(.enable(enable), .clk(phi_r));
+    // Phi_p es generado con el pulso debido a que se debe generar un unico pulso
+    assign phi_p =0;
+    
+    always @(posedge clk)begin  
+        if (enable) begin
+            phi_l1 <= gen_phi_l1;
+            phi_l2 <= gen_phi_l2;
+            phi_r <= gen_phi_r;
+        end else begin
+            phi_l1 <= 0;
+            phi_l2 <= 0;
+            phi_r <= 0; 
+        end
+    end 
+
+
+
 
 endmodule
