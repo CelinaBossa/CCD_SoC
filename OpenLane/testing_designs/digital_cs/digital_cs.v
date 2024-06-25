@@ -1,9 +1,9 @@
-//`timescale 1ns/1ps
+`timescale 1ns/1ps
 
 module digital_cs(
-    input  enable,
-    input  clk,
-    input [7:0] f_select,
+    input wire enable,
+    input wire clk,
+    input wire [7:0] f_select,
     output   phi_p,
     output   phi_l2,
     output   phi_l1,
@@ -12,25 +12,51 @@ module digital_cs(
     parameter min_exp = 32'h186A00 ;
 
     wire clk_prueba;
+    reg enable_shifteo = 1 ;
+    reg [31:0] counter = 0;
     //reg [32:0] count_pixels = min_exp ;
     //reg enable_shifteo = 1'b1;
+
+
+    always@(posedge enable )begin
+        if (enable) begin
+            enable_shifteo <= 1;
+            counter <= 0;
+        end else begin
+            enable_shifteo <= 0;
+        end 
+
+    end
+    always@(negedge phi_p )begin
+        enable_shifteo <= 1;
+        counter <= 0;
+    end
 //Variables a utilizar 
 
     
-    squared_wave_gen  u1( .enable(enable_shifteo), .out_signal(clk_prueba));
+    squared_wave_gen  u1( .enable(enable ), .out_signal(clk_prueba));
     //Generamos las señales requeridas con el modulo squared_wave_gen
     // Phi_L1
     //$display("Sginal      Phi_L1");
-    squared_wave_gen #(.FREQ(130000), .PHASE(180), .DUTY(50)) gen_phi_l1(.enable(enable), .out_signal(phi_l1));
+    squared_wave_gen #(.FREQ(130000), .PHASE(180), .DUTY(50)) gen_phi_l1(.enable(enable && enable_shifteo ), .out_signal(phi_l1));
     // Phi_L2
     //$display("Sginal      Phi_L2");
-    squared_wave_gen #(.FREQ(130000), .PHASE(0), .DUTY(50)) gen_phi_l2(.enable(enable), .out_signal(phi_l2));
+    squared_wave_gen #(.FREQ(130000), .PHASE(0), .DUTY(50)) gen_phi_l2(.enable(enable && enable_shifteo ), .out_signal(phi_l2));
     // Phi_R
     //$display("Sginal      Phi_R");
-    squared_wave_gen #(  .FREQ(130000), .PHASE(0), .DUTY(25)) gen_phi_r(.enable(enable), .out_signal(phi_r));
+    squared_wave_gen #(  .FREQ(130000), .PHASE(0), .DUTY(25)) gen_phi_r(.enable(enable && enable_shifteo ), .out_signal(phi_r));
     // Phi_p es generado con el pulso debido a que se debe generar un unico pulso
     pulse_generator  gen_phi_p(.clk(clk), .rst(~enable), .DIVIDE_BY_N(min_exp + (f_select*16'h6429)), .sync_out(phi_p) );
 
+    always @(posedge phi_l1 ) begin
+        counter = counter + 1;
+        if (counter > (32'h01FBD00)) begin
+            enable_shifteo<=0;
+        end else begin
+            enable_shifteo<=1;
+        end
+    end
+    
 
 
 endmodule

@@ -33,7 +33,7 @@ module tb;
 
     // Proceso de prueba
     initial begin
-        enable =0;
+        enable = 0;
         #50;
         enable = 1;
         #50;
@@ -47,12 +47,19 @@ module tb;
         //#750;
         //#50;
         //enable = 1;
-        f_select = 8'h08;
-        #18000000;
-        f_select = 8'h80;
-        #18000000;
-        f_select = 8'h01;
-        #18000000;
+        f_select = 8'h0f;
+        #16100000;
+        
+        //f_select = 8'h0A;
+
+        #8000000;
+        //enable = 0;
+        #5000;
+        enable = 1;
+        #8000000;
+        
+        //f_select = 8'h01;
+        #16000000;
         f_select = 8'h00;
 
 
