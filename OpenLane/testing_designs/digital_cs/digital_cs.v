@@ -57,8 +57,6 @@ module digital_cs(
         end
     end
     
-
-
 endmodule
 
 module pulse_generator(
