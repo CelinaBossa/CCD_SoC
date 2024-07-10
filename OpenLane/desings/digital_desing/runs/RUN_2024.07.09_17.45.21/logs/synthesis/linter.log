@@ -1,0 +1,18 @@
+%Warning-WIDTHEXPAND: designs/digital_desing/src/digital_designs.v:59:27: Operator SUB expects 32 bits on the LHS, but LHS's VARREF 't_min' generates 24 bits.
+                                                                        : ... In instance digital_cs
+   59 |             delay = t_min - 400 - t_waves + f_select*t_step;
+      |                           ^
+                      ... For warning description see https://verilator.org/warn/WIDTHEXPAND?v=5.009
+                      ... Use "/* verilator lint_off WIDTHEXPAND */" and lint_on around source to disable this message.
+%Warning-WIDTHEXPAND: designs/digital_desing/src/digital_designs.v:59:33: Operator SUB expects 32 bits on the RHS, but RHS's VARREF 't_waves' generates 24 bits.
+                                                                        : ... In instance digital_cs
+   59 |             delay = t_min - 400 - t_waves + f_select*t_step;
+      |                                 ^
+%Warning-UNUSEDSIGNAL: designs/digital_desing/src/digital_designs.v:36:9: Signal is not used: 'gral_enable'
+                                                                        : ... In instance digital_cs
+   36 |     reg gral_enable = 1'b0;
+      |         ^~~~~~~~~~~
+%Warning-BLKSEQ: designs/digital_desing/src/digital_designs.v:59:19: Blocking assignment '=' in sequential logic process
+                                                                   : ... Suggest using delayed assignment '<='
+   59 |             delay = t_min - 400 - t_waves + f_select*t_step;
+      |                   ^

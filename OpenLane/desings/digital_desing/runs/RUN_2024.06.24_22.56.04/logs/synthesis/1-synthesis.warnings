@@ -1,0 +1,4 @@
+ABC: Warning: Detected 2 multi-output gates (for example, "sky130_fd_sc_hd__fa_1").
+Warning: Wire pulse_generator.\sync_out is used but has no driver.
+Warning: Wire pulse_generator.\comb_out is used but has no driver.
+Warnings: 2 unique messages, 2 total

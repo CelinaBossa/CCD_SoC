@@ -1,0 +1,40 @@
+%Warning-PINCONNECTEMPTY: designs/digital_desing/src/digital_designs.v:53:43: Cell pin connected by name with empty reference: 'out_signal'
+   53 |     squared_wave_gen u1(.enable(enable), .out_signal( ));
+      |                                           ^~~~~~~~~~
+                          ... For warning description see https://verilator.org/warn/PINCONNECTEMPTY?v=5.009
+                          ... Use "/* verilator lint_off PINCONNECTEMPTY */" and lint_on around source to disable this message.
+%Warning-PINCONNECTEMPTY: designs/digital_desing/src/digital_designs.v:62:121: Cell pin connected by name with empty reference: 'comb_out'
+   62 |     pulse_generator gen_phi_p(.clk(clk), .rst(~enable), .DIVIDE_BY_N(min_exp + (f_select*16'h6429)), .sync_out(phi_p), .comb_out( ));
+      |                                                                                                                         ^~~~~~~~
+%Warning-REALCVT: designs/digital_desing/src/digital_designs.v:113:37: Implicit conversion of real to integer
+  113 |         clk_pd = (1.0/(FREQ * 1e3)) * 1e9;    
+      |                                     ^
+%Warning-REALCVT: designs/digital_desing/src/digital_designs.v:114:31: Implicit conversion of real to integer
+  114 |         clk_on = (DUTY/100.0) * clk_pd;
+      |                               ^
+%Warning-REALCVT: designs/digital_desing/src/digital_designs.v:115:42: Implicit conversion of real to integer
+  115 |         clk_off = ((100.0 - DUTY)/100.0) * clk_pd;
+      |                                          ^
+%Warning-ZERODLY: designs/digital_desing/src/digital_designs.v:130:13: Unsupported: #0 delays do not schedule process resumption in the Inactive region
+  130 |             #start_dly start_clk <= 1;
+      |             ^
+%Warning-ZERODLY: designs/digital_desing/src/digital_designs.v:132:13: Unsupported: #0 delays do not schedule process resumption in the Inactive region
+  132 |             #start_dly start_clk <= 0;
+      |             ^
+%Warning-ZERODLY: designs/digital_desing/src/digital_designs.v:140:17: Unsupported: #0 delays do not schedule process resumption in the Inactive region
+  140 |                 #clk_on out_signal <= 0;
+      |                 ^
+%Warning-MULTIDRIVEN: designs/digital_desing/src/digital_designs.v:33:16: Signal has multiple driving blocks with different clocking: 'digital_cs.counter'
+                      designs/digital_desing/src/digital_designs.v:45:9: ... Location of first driving block
+   45 |         counter <= counter + 1;  
+      |         ^~~~~~~
+                      designs/digital_desing/src/digital_designs.v:38:13: ... Location of other driving block
+   38 |             counter <= 0;
+      |             ^~~~~~~
+%Warning-MULTIDRIVEN: designs/digital_desing/src/digital_designs.v:32:9: Signal has multiple driving blocks with different clocking: 'digital_cs.enable_shifteo'
+                      designs/digital_desing/src/digital_designs.v:47:13: ... Location of first driving block
+   47 |             enable_shifteo <= 0;
+      |             ^~~~~~~~~~~~~~
+                      designs/digital_desing/src/digital_designs.v:37:13: ... Location of other driving block
+   37 |             enable_shifteo <= 1;
+      |             ^~~~~~~~~~~~~~

@@ -1,0 +1,25 @@
+%Warning-UNUSEDSIGNAL: designs/digital_desing/src/digital_designs.v:23:16: Signal is not used: 'clk'
+                                                                         : ... In instance digital_cs
+   23 |     input wire clk,
+      |                ^~~
+                       ... For warning description see https://verilator.org/warn/UNUSEDSIGNAL?v=5.009
+                       ... Use "/* verilator lint_off UNUSEDSIGNAL */" and lint_on around source to disable this message.
+%Warning-UNUSEDSIGNAL: designs/digital_desing/src/digital_designs.v:24:22: Signal is not used: 'f_select'
+                                                                         : ... In instance digital_cs
+   24 |     input wire [7:0] f_select,
+      |                      ^~~~~~~~
+%Warning-UNUSEDPARAM: designs/digital_desing/src/digital_designs.v:31:15: Parameter is not used: 'min_exp'
+                                                                        : ... In instance digital_cs
+   31 |     parameter min_exp = 32'h186A00;
+      |               ^~~~~~~
+%Warning-BLKSEQ: designs/digital_desing/src/digital_designs.v:63:23: Blocking assignment '=' in sequential logic process
+                                                                   : ... Suggest using delayed assignment '<='
+   63 |                 delay = 1600000 - 70 - 779;
+      |                       ^
+%Warning-SYNCASYNCNET: designs/digital_desing/src/digital_designs.v:34:9: Signal flopped as both synchronous and async: 'digital_cs.gral_enable'
+                       designs/digital_desing/src/digital_designs.v:66:29: ... Location of async usage
+   66 |             gral_enable <= ~gral_enable;
+      |                             ^~~~~~~~~~~
+                       designs/digital_desing/src/digital_designs.v:46:25: ... Location of sync usage
+   46 |         gral_enable <= ~gral_enable;
+      |                         ^~~~~~~~~~~

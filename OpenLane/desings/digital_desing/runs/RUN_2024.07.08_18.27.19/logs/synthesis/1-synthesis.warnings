@@ -1,0 +1,6 @@
+Warning: multiple conflicting drivers for digital_cs.\gral_enable:
+Warning: Wire digital_cs.\phi_r is used but has no driver.
+Warning: Wire digital_cs.\phi_p is used but has no driver.
+Warning: Wire digital_cs.\phi_l2 is used but has no driver.
+Warning: Wire digital_cs.\phi_l1 is used but has no driver.
+Warnings: 5 unique messages, 5 total

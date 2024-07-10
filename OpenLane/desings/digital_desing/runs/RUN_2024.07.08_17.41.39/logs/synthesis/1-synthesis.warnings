@@ -1,0 +1,11 @@
+Warning: multiple conflicting drivers for digital_cs.\phi_p:
+Warning: multiple conflicting drivers for digital_cs.\phi_l2:
+Warning: multiple conflicting drivers for digital_cs.\phi_l1:
+Warning: multiple conflicting drivers for digital_cs.\phi_r:
+Warning: Driver-driver conflict for \phi_p between cell $procdff$16440.Q and constant 1'0 in digital_cs: Resolved using constant.
+Warning: Driver-driver conflict for \phi_l1 between cell $procdff$16442.Q and constant 1'0 in digital_cs: Resolved using constant.
+Warning: Wire digital_cs.\phi_r is used but has no driver.
+Warning: Wire digital_cs.\phi_p is used but has no driver.
+Warning: Wire digital_cs.\phi_l2 is used but has no driver.
+Warning: Wire digital_cs.\phi_l1 is used but has no driver.
+Warnings: 10 unique messages, 10 total

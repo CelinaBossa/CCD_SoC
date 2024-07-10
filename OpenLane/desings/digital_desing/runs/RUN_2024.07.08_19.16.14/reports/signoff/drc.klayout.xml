@@ -1,0 +1,191 @@
+<?xml version="1.0" ?>
+<report-database>
+    <categories>
+        <category>
+            <name>Metal3_spacing_lt_0dot3um_met3dot2</name>
+        </category>
+    </categories>
+    <cells>
+        <cell>
+            <name>digital_cs</name>
+        </cell>
+    </cells>
+    <items>
+        <item>
+            <category>Metal3_spacing_lt_0dot3um_met3dot2</category>
+            <cell>digital_cs</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (4.130,13.440;4.160,13.640)</value>
+                <value>text: 'On layer met3'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal3_spacing_lt_0dot3um_met3dot2</category>
+            <cell>digital_cs</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (4.160,13.460;4.180,13.640)</value>
+                <value>text: 'On layer met3'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal3_spacing_lt_0dot3um_met3dot2</category>
+            <cell>digital_cs</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (4.180,13.460;4.300,13.640)</value>
+                <value>text: 'On layer met3'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal3_spacing_lt_0dot3um_met3dot2</category>
+            <cell>digital_cs</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (4.160,13.440;4.300,13.460)</value>
+                <value>text: 'On layer met3'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal3_spacing_lt_0dot3um_met3dot2</category>
+            <cell>digital_cs</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (4.130,13.435;4.300,13.440)</value>
+                <value>text: 'On layer met3'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal3_spacing_lt_0dot3um_met3dot2</category>
+            <cell>digital_cs</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (3.830,13.765;4.000,14.065)</value>
+                <value>text: 'On layer met3'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal3_spacing_lt_0dot3um_met3dot2</category>
+            <cell>digital_cs</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (4.130,13.760;4.300,13.765)</value>
+                <value>text: 'On layer met3'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal3_spacing_lt_0dot3um_met3dot2</category>
+            <cell>digital_cs</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (4.130,13.440;4.160,13.760)</value>
+                <value>text: 'On layer met3'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal3_spacing_lt_0dot3um_met3dot2</category>
+            <cell>digital_cs</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (4.160,13.740;4.300,13.760)</value>
+                <value>text: 'On layer met3'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal3_spacing_lt_0dot3um_met3dot2</category>
+            <cell>digital_cs</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (4.160,13.460;4.180,13.740)</value>
+                <value>text: 'On layer met3'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal3_spacing_lt_0dot3um_met3dot2</category>
+            <cell>digital_cs</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (4.180,13.460;4.300,13.740)</value>
+                <value>text: 'On layer met3'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal3_spacing_lt_0dot3um_met3dot2</category>
+            <cell>digital_cs</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (4.160,13.440;4.300,13.460)</value>
+                <value>text: 'On layer met3'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal3_spacing_lt_0dot3um_met3dot2</category>
+            <cell>digital_cs</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (4.130,13.435;4.300,13.440)</value>
+                <value>text: 'On layer met3'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal3_spacing_lt_0dot3um_met3dot2</category>
+            <cell>digital_cs</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (3.830,13.760;4.000,14.065)</value>
+                <value>text: 'On layer met3'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal3_spacing_lt_0dot3um_met3dot2</category>
+            <cell>digital_cs</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: (3.830,13.640;4.000,13.760)</value>
+                <value>text: 'On layer met3'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+        <item>
+            <category>Metal3_spacing_lt_0dot3um_met3dot2</category>
+            <cell>digital_cs</cell>
+            <visited>false</visited>
+            <multiplicity>1</multiplicity>
+            <values>
+                <value>box: ([INFO]:,Should;be,divided)</value>
+                <value>text: 'On layer met3'</value>
+                <value>text: 'Between N/A N/A'</value>
+            </values>
+        </item>
+    </items>
+</report-database>

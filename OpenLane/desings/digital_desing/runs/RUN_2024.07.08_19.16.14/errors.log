@@ -1,0 +1,16 @@
+[ERROR]: There are violations in the design after Magic DRC.
+[ERROR]: Total Number of violations is 16
+[ERROR]: Step 40 (drc) failed with error:
+-code 1 -level 0 -errorcode NONE -errorinfo {
+    while executing
+"throw_error"
+    (procedure "quit_on_magic_drc" line 12)
+    invoked from within
+"quit_on_magic_drc -log $::env(drc_prefix).tr"
+    (procedure "run_magic_drc" line 27)
+    invoked from within
+"run_magic_drc"
+    (procedure "run_drc_step" line 9)
+    invoked from within
+"run_drc_step"} -errorline 1
+[ERROR]: Flow failed.

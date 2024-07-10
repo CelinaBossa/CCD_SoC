@@ -1,0 +1,6 @@
+<< properties >>
+string FIXED_BBOX 0 0 10136 12280
+string GDS_END 479928
+string GDS_FILE /openlane/designs/digital_desing/runs/RUN_2024.06.24_22.56.04/results/signoff/pulse_generator.magic.gds
+string GDS_START 223072
+<< end >>

@@ -1,0 +1,7 @@
+
+17. Executing CHECK pass (checking for obvious problems).
+Checking module digital_cs...
+Warning: multiple conflicting drivers for digital_cs.\gral_enable:
+    port Q[0] of cell $procdff$4184 ($dff)
+    port Q[0] of cell $auto$proc_dlatch.cc:427:proc_dlatch$4183 ($dlatch)
+Found and reported 1 problems.

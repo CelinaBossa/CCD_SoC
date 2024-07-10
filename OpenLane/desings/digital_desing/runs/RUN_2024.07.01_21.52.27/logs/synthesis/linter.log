@@ -1,0 +1,22 @@
+%Warning-PINMISSING: designs/digital_desing/src/digital_designs.v:67:22: Cell has missing pin: 'comb_out'
+   67 |     pulse_generator  gen_phi_p(.clk(clk), .rst(~enable), .DIVIDE_BY_N(min_exp + (f_select*16'h6429)), .sync_out(phi_p) );
+      |                      ^~~~~~~~~
+                     ... For warning description see https://verilator.org/warn/PINMISSING?v=5.009
+                     ... Use "/* verilator lint_off PINMISSING */" and lint_on around source to disable this message.
+%Error-NEEDTIMINGOPT: designs/digital_desing/src/digital_designs.v:161:13: Use --timing or --no-timing to specify how delays should be handled
+                                                                         : ... In instance digital_cs.gen_phi_r
+  161 |             #(start_dly) start_clk = 1;
+      |             ^
+%Error-NEEDTIMINGOPT: designs/digital_desing/src/digital_designs.v:163:13: Use --timing or --no-timing to specify how delays should be handled
+                                                                         : ... In instance digital_cs.gen_phi_r
+  163 |             #(start_dly) start_clk = 0;
+      |             ^
+%Error-NEEDTIMINGOPT: designs/digital_desing/src/digital_designs.v:173:17: Use --timing or --no-timing to specify how delays should be handled
+                                                                         : ... In instance digital_cs.gen_phi_r
+  173 |                 #(clk_on) out_signal = 0;
+      |                 ^
+%Error-NEEDTIMINGOPT: designs/digital_desing/src/digital_designs.v:174:17: Use --timing or --no-timing to specify how delays should be handled
+                                                                         : ... In instance digital_cs.gen_phi_r
+  174 |                 #(clk_off) out_signal = 1;
+      |                 ^
+%Error: Exiting due to 4 error(s)

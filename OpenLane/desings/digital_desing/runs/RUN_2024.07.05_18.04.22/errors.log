@@ -1,0 +1,32 @@
+[ERROR]: during executing yosys script /openlane/scripts/yosys/synth.tcl
+[ERROR]: Log: designs/digital_desing/runs/RUN_2024.07.05_18.04.22/logs/synthesis/1-synthesis.log
+[ERROR]: Last 10 lines:
+
+[TCL: yosys -import] Command name collision: found pre-existing command `cd' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `eval' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `exec' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `read' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `trace' -> skip.
+
+1. Executing Verilog-2005 frontend: designs/digital_desing/src/digital_designs.v
+designs/digital_desing/src/digital_designs.v:104: ERROR: syntax error, unexpected TOK_REAL
+child process exited abnormally
+
+[ERROR]: Creating issue reproducible...
+[ERROR]: Step 1 (synthesis) failed with error:
+-code 1 -level 0 -errorcode NONE -errorinfo {
+    while executing
+"throw_error"
+    (procedure "run_tcl_script" line 219)
+    invoked from within
+"run_tcl_script -tool yosys -no_consume {*}$args"
+    (procedure "run_yosys_script" line 2)
+    invoked from within
+"run_yosys_script $::env(SYNTH_SCRIPT) -indexed_log $arg_values(-indexed_log)"
+    (procedure "run_yosys" line 44)
+    invoked from within
+"run_yosys -indexed_log $log"
+    (procedure "run_synthesis" line 13)
+    invoked from within
+"run_synthesis"} -errorline 1
+[ERROR]: Flow failed.

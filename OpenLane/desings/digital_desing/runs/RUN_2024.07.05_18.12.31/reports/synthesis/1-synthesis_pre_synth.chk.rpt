@@ -1,0 +1,120 @@
+
+17. Executing CHECK pass (checking for obvious problems).
+Checking module $paramod$1de6e83b57250f489a4298b364363db428ea2b20\squared_wave_gen...
+Warning: multiple conflicting drivers for $paramod$1de6e83b57250f489a4298b364363db428ea2b20\squared_wave_gen.\out_signal:
+    port Q[0] of cell $procdff$90 ($dff)
+    port Q[0] of cell $procdff$86 ($dff)
+Checking module $paramod$16b66525c81909e6856c6221b16371e449274451\squared_wave_gen...
+Warning: multiple conflicting drivers for $paramod$16b66525c81909e6856c6221b16371e449274451\squared_wave_gen.\out_signal:
+    port Q[0] of cell $procdff$96 ($dff)
+    port Q[0] of cell $procdff$92 ($dff)
+Checking module $paramod$f40fc4867c6a4cdbd81862ea685c0420c2f18062\squared_wave_gen...
+Warning: multiple conflicting drivers for $paramod$f40fc4867c6a4cdbd81862ea685c0420c2f18062\squared_wave_gen.\out_signal:
+    port Q[0] of cell $procdff$102 ($dff)
+    port Q[0] of cell $procdff$98 ($dff)
+Checking module squared_wave_gen...
+Warning: multiple conflicting drivers for squared_wave_gen.\out_signal:
+    port Q[0] of cell $procdff$108 ($dff)
+    port Q[0] of cell $procdff$104 ($dff)
+Checking module pulse_generator...
+Checking module digital_cs...
+Warning: multiple conflicting drivers for digital_cs.\enable_shifteo:
+    port Q[0] of cell $procdff$114 ($dff)
+    port Q[0] of cell $procdff$112 ($dff)
+Warning: multiple conflicting drivers for digital_cs.\counter [31]:
+    port Q[31] of cell $procdff$115 ($dff)
+    port Q[31] of cell $procdff$113 ($dff)
+Warning: multiple conflicting drivers for digital_cs.\counter [30]:
+    port Q[30] of cell $procdff$115 ($dff)
+    port Q[30] of cell $procdff$113 ($dff)
+Warning: multiple conflicting drivers for digital_cs.\counter [29]:
+    port Q[29] of cell $procdff$115 ($dff)
+    port Q[29] of cell $procdff$113 ($dff)
+Warning: multiple conflicting drivers for digital_cs.\counter [28]:
+    port Q[28] of cell $procdff$115 ($dff)
+    port Q[28] of cell $procdff$113 ($dff)
+Warning: multiple conflicting drivers for digital_cs.\counter [27]:
+    port Q[27] of cell $procdff$115 ($dff)
+    port Q[27] of cell $procdff$113 ($dff)
+Warning: multiple conflicting drivers for digital_cs.\counter [26]:
+    port Q[26] of cell $procdff$115 ($dff)
+    port Q[26] of cell $procdff$113 ($dff)
+Warning: multiple conflicting drivers for digital_cs.\counter [25]:
+    port Q[25] of cell $procdff$115 ($dff)
+    port Q[25] of cell $procdff$113 ($dff)
+Warning: multiple conflicting drivers for digital_cs.\counter [24]:
+    port Q[24] of cell $procdff$115 ($dff)
+    port Q[24] of cell $procdff$113 ($dff)
+Warning: multiple conflicting drivers for digital_cs.\counter [23]:
+    port Q[23] of cell $procdff$115 ($dff)
+    port Q[23] of cell $procdff$113 ($dff)
+Warning: multiple conflicting drivers for digital_cs.\counter [22]:
+    port Q[22] of cell $procdff$115 ($dff)
+    port Q[22] of cell $procdff$113 ($dff)
+Warning: multiple conflicting drivers for digital_cs.\counter [21]:
+    port Q[21] of cell $procdff$115 ($dff)
+    port Q[21] of cell $procdff$113 ($dff)
+Warning: multiple conflicting drivers for digital_cs.\counter [20]:
+    port Q[20] of cell $procdff$115 ($dff)
+    port Q[20] of cell $procdff$113 ($dff)
+Warning: multiple conflicting drivers for digital_cs.\counter [19]:
+    port Q[19] of cell $procdff$115 ($dff)
+    port Q[19] of cell $procdff$113 ($dff)
+Warning: multiple conflicting drivers for digital_cs.\counter [18]:
+    port Q[18] of cell $procdff$115 ($dff)
+    port Q[18] of cell $procdff$113 ($dff)
+Warning: multiple conflicting drivers for digital_cs.\counter [17]:
+    port Q[17] of cell $procdff$115 ($dff)
+    port Q[17] of cell $procdff$113 ($dff)
+Warning: multiple conflicting drivers for digital_cs.\counter [16]:
+    port Q[16] of cell $procdff$115 ($dff)
+    port Q[16] of cell $procdff$113 ($dff)
+Warning: multiple conflicting drivers for digital_cs.\counter [15]:
+    port Q[15] of cell $procdff$115 ($dff)
+    port Q[15] of cell $procdff$113 ($dff)
+Warning: multiple conflicting drivers for digital_cs.\counter [14]:
+    port Q[14] of cell $procdff$115 ($dff)
+    port Q[14] of cell $procdff$113 ($dff)
+Warning: multiple conflicting drivers for digital_cs.\counter [13]:
+    port Q[13] of cell $procdff$115 ($dff)
+    port Q[13] of cell $procdff$113 ($dff)
+Warning: multiple conflicting drivers for digital_cs.\counter [12]:
+    port Q[12] of cell $procdff$115 ($dff)
+    port Q[12] of cell $procdff$113 ($dff)
+Warning: multiple conflicting drivers for digital_cs.\counter [11]:
+    port Q[11] of cell $procdff$115 ($dff)
+    port Q[11] of cell $procdff$113 ($dff)
+Warning: multiple conflicting drivers for digital_cs.\counter [10]:
+    port Q[10] of cell $procdff$115 ($dff)
+    port Q[10] of cell $procdff$113 ($dff)
+Warning: multiple conflicting drivers for digital_cs.\counter [9]:
+    port Q[9] of cell $procdff$115 ($dff)
+    port Q[9] of cell $procdff$113 ($dff)
+Warning: multiple conflicting drivers for digital_cs.\counter [8]:
+    port Q[8] of cell $procdff$115 ($dff)
+    port Q[8] of cell $procdff$113 ($dff)
+Warning: multiple conflicting drivers for digital_cs.\counter [7]:
+    port Q[7] of cell $procdff$115 ($dff)
+    port Q[7] of cell $procdff$113 ($dff)
+Warning: multiple conflicting drivers for digital_cs.\counter [6]:
+    port Q[6] of cell $procdff$115 ($dff)
+    port Q[6] of cell $procdff$113 ($dff)
+Warning: multiple conflicting drivers for digital_cs.\counter [5]:
+    port Q[5] of cell $procdff$115 ($dff)
+    port Q[5] of cell $procdff$113 ($dff)
+Warning: multiple conflicting drivers for digital_cs.\counter [4]:
+    port Q[4] of cell $procdff$115 ($dff)
+    port Q[4] of cell $procdff$113 ($dff)
+Warning: multiple conflicting drivers for digital_cs.\counter [3]:
+    port Q[3] of cell $procdff$115 ($dff)
+    port Q[3] of cell $procdff$113 ($dff)
+Warning: multiple conflicting drivers for digital_cs.\counter [2]:
+    port Q[2] of cell $procdff$115 ($dff)
+    port Q[2] of cell $procdff$113 ($dff)
+Warning: multiple conflicting drivers for digital_cs.\counter [1]:
+    port Q[1] of cell $procdff$115 ($dff)
+    port Q[1] of cell $procdff$113 ($dff)
+Warning: multiple conflicting drivers for digital_cs.\counter [0]:
+    port Q[0] of cell $procdff$115 ($dff)
+    port Q[0] of cell $procdff$113 ($dff)
+Found and reported 37 problems.
