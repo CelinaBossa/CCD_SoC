@@ -5,46 +5,117 @@ K {}
 V {}
 S {}
 E {}
-N 420 190 470 190 {
+N 1150 110 1150 150 {
 lab=VidBuf}
-N 230 160 230 210 {
+N 1010 110 1010 150 {
 lab=#net1}
-N 230 190 360 190 {
+N 1010 20 1010 50 {
+lab=Vdd}
+N 1150 20 1150 50 {
+lab=Vdd}
+N 1010 210 1010 240 {
+lab=gnd}
+N 1150 210 1150 240 {
+lab=gnd}
+N 1150 130 1180 130 {
+lab=VidBuf}
+N 1110 80 1110 180 {
 lab=#net1}
-N 230 80 230 100 {
-lab=#net2}
-N 230 -10 230 20 {
-lab=VDD}
-N 70 130 190 130 {
-lab=#net3}
-N -50 130 10 130 {
-lab=#net4}
-N 230 270 230 340 {
-lab=GND}
-N -150 130 -110 130 {
+N 1010 20 1150 20 {
+lab=Vdd}
+N 1010 240 1150 240 {
+lab=gnd}
+N 1010 130 1110 130 {
+lab=#net1}
+N 1010 180 1020 180 {
+lab=gnd}
+N 1020 180 1020 210 {
+lab=gnd}
+N 1010 210 1020 210 {
+lab=gnd}
+N 1150 180 1160 180 {
+lab=gnd}
+N 1160 180 1160 210 {
+lab=gnd}
+N 1150 210 1160 210 {
+lab=gnd}
+N 1150 80 1160 80 {
+lab=Vdd}
+N 1160 50 1160 80 {
+lab=Vdd}
+N 1150 50 1160 50 {
+lab=Vdd}
+N 1010 80 1020 80 {
+lab=Vdd}
+N 1020 50 1020 80 {
+lab=Vdd}
+N 1010 50 1020 50 {
+lab=Vdd}
+N 910 80 910 130 {
 lab=Vin}
-C {/usr/local/share/pdk/sky130B/libs.tech/xschem/sky130_fd_pr/npn_05v5.sym} 210 130 0 0 {name=Q1
-model=npn_05v5_w1p00l2p00 m=1
+N 910 80 970 80 {
+lab=Vin}
+N 910 130 910 180 {
+lab=Vin}
+N 910 180 970 180 {
+lab=Vin}
+C {iopin.sym} 1180 130 0 0 {name=p1 lab=VidBuf}
+C {ipin.sym} 910 130 0 0 {name=p2 lab=Vin}
+C {/usr/local/share/pdk/sky130B/libs.tech/xschem/sky130_fd_pr/nfet_01v8.sym} 990 180 0 0 {name=M1
+W=1
+L=0.85
+nf=1 
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8
 spiceprefix=X
 }
-C {vdd.sym} 230 -10 0 0 {name=l1 lab=VDD}
-C {gnd.sym} 230 340 0 0 {name=l2 lab=GND}
-C {/usr/local/share/pdk/sky130B/libs.tech/xschem/sky130_fd_pr/cap_mim_m3_1.sym} 390 190 3 0 {name=C1 model=cap_mim_m3_1 W=1 L=1 MF=1 spiceprefix=X}
-C {iopin.sym} 470 190 0 0 {name=p1 lab=VidBuf}
-C {/usr/local/share/pdk/sky130B/libs.tech/xschem/sky130_fd_pr/res_generic_l1.sym} 230 240 0 0 {name=Re
+C {/usr/local/share/pdk/sky130B/libs.tech/xschem/sky130_fd_pr/pfet_01v8.sym} 990 80 0 0 {name=M2
 W=1
-L=1
-model=res_generic_l1
-mult=1}
-C {/usr/local/share/pdk/sky130B/libs.tech/xschem/sky130_fd_pr/res_generic_l1.sym} 230 50 0 0 {name=Rc
+L=0.85
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}
+C {/usr/local/share/pdk/sky130B/libs.tech/xschem/sky130_fd_pr/nfet_01v8.sym} 1130 180 0 0 {name=M3
 W=1
-L=1
-model=res_generic_l1
-mult=1}
-C {/usr/local/share/pdk/sky130B/libs.tech/xschem/sky130_fd_pr/cap_mim_m3_1.sym} 40 130 3 0 {name=C2 model=cap_mim_m3_1 W=1 L=1 MF=1 spiceprefix=X}
-C {/usr/local/share/pdk/sky130B/libs.tech/xschem/sky130_fd_pr/res_generic_l1.sym} -80 130 1 0 {name=Rs
-W=0.96
-L=17.7
-model=res_generic_l1
-mult=1}
-C {ipin.sym} -150 130 0 0 {name=p2 lab=Vin}
+L=0.85
+nf=1 
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8
+spiceprefix=X
+}
+C {/usr/local/share/pdk/sky130B/libs.tech/xschem/sky130_fd_pr/pfet_01v8.sym} 1130 80 0 0 {name=M4
+W=1
+L=0.85
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}
+C {ipin.sym} 1080 20 1 0 {name=p3 lab=Vdd}
+C {ipin.sym} 1080 240 3 0 {name=p4 lab=gnd}
