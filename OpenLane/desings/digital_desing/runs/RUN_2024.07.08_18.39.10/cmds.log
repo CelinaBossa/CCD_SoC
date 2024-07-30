@@ -1,0 +1,48 @@
+Mon Jul 08 18:39:10 UTC 2024 - Executing "openroad -exit -no_init -python /openlane/scripts/odbpy/lefutil.py get_metal_layers -o /openlane/designs/digital_desing/runs/RUN_2024.07.08_18.39.10/tmp/layers.list /home/celina/.volare/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef"
+
+Mon Jul 08 18:39:11 UTC 2024 - Executing "/openlane/scripts/mergeLef.py -o /openlane/designs/digital_desing/runs/RUN_2024.07.08_18.39.10/tmp/merged.nom.lef -i /home/celina/.volare/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef {/home/celina/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef /home/celina/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef} |& tee /dev/null"
+
+Mon Jul 08 18:39:11 UTC 2024 - Executing "/openlane/scripts/mergeLef.py -o /openlane/designs/digital_desing/runs/RUN_2024.07.08_18.39.10/tmp/merged.min.lef -i /home/celina/.volare/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__min.tlef {/home/celina/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef /home/celina/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef} |& tee /dev/null"
+
+Mon Jul 08 18:39:11 UTC 2024 - Executing "/openlane/scripts/mergeLef.py -o /openlane/designs/digital_desing/runs/RUN_2024.07.08_18.39.10/tmp/merged.max.lef -i /home/celina/.volare/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__max.tlef {/home/celina/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef /home/celina/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef} |& tee /dev/null"
+
+Mon Jul 08 18:39:11 UTC 2024 - Executing "python3 /openlane/scripts/mergeLib.py --output /openlane/designs/digital_desing/runs/RUN_2024.07.08_18.39.10/tmp/synthesis/merged.lib --name sky130A_merged /home/celina/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
+
+Mon Jul 08 18:39:12 UTC 2024 - Executing "python3 /openlane/scripts/libtrim.py --cell-file /openlane/designs/digital_desing/runs/RUN_2024.07.08_18.39.10/tmp/synthesis/trimmed.lib.exclude.list --output /openlane/designs/digital_desing/runs/RUN_2024.07.08_18.39.10/tmp/synthesis/trimmed.lib /openlane/designs/digital_desing/runs/RUN_2024.07.08_18.39.10/tmp/synthesis/merged.lib"
+
+Mon Jul 08 18:39:12 UTC 2024 - Executing "python3 /openlane/scripts/libtrim.py --cell-file /openlane/designs/digital_desing/runs/RUN_2024.07.08_18.39.10/tmp/cts/cts.lib.exclude.list --output /openlane/designs/digital_desing/runs/RUN_2024.07.08_18.39.10/tmp/cts/cts.lib /home/celina/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
+
+Mon Jul 08 18:39:13 UTC 2024 - Executing "python3 /openlane/scripts/libtrim.py --cell-file /openlane/designs/digital_desing/runs/RUN_2024.07.08_18.39.10/tmp/cts/cts-fastest.lib.exclude.list --output /openlane/designs/digital_desing/runs/RUN_2024.07.08_18.39.10/tmp/cts/cts-fastest.lib /home/celina/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v95.lib"
+
+Mon Jul 08 18:39:14 UTC 2024 - Executing "python3 /openlane/scripts/libtrim.py --cell-file /openlane/designs/digital_desing/runs/RUN_2024.07.08_18.39.10/tmp/cts/cts-slowest.lib.exclude.list --output /openlane/designs/digital_desing/runs/RUN_2024.07.08_18.39.10/tmp/cts/cts-slowest.lib /home/celina/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib"
+
+Mon Jul 08 18:39:15 UTC 2024 - Executing "python3 /openlane/scripts/new_tracks.py -i /home/celina/.volare/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tracks.info -o /openlane/designs/digital_desing/runs/RUN_2024.07.08_18.39.10/tmp/routing/config.tracks"
+
+Mon Jul 08 18:39:15 UTC 2024 - Executing "echo {OpenLane 30ee1388932eb55a89ad84ee43997bfe3a386421} > /openlane/designs/digital_desing/runs/RUN_2024.07.08_18.39.10/OPENLANE_VERSION"
+
+Mon Jul 08 18:39:15 UTC 2024 - Executing "bash -c {verilator  --lint-only  -Wall  --Wno-DECLFILENAME  --top-module digital_cs  --timing  designs/digital_desing/src/digital_designs.v -Wno-fatal --relative-includes |& tee /openlane/designs/digital_desing/runs/RUN_2024.07.08_18.39.10/logs/synthesis/linter.log /dev/null}"
+
+Mon Jul 08 18:39:15 UTC 2024 - Executing "sed -E {s/^([[:space:]]+)pg_pin(.*)/\1pin\2\n\1    direction : "inout";/g} /home/celina/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib > /openlane/designs/digital_desing/runs/RUN_2024.07.08_18.39.10/tmp/synthesis/1-sky130_fd_sc_hd__tt_025C_1v80.no_pg.lib"
+
+Mon Jul 08 18:39:16 UTC 2024 - Executing "sed -E {s/^([[:space:]]+)pg_pin(.*)/\1pin\2\n\1    direction : "inout";/g} /openlane/designs/digital_desing/runs/RUN_2024.07.08_18.39.10/tmp/synthesis/trimmed.lib > /openlane/designs/digital_desing/runs/RUN_2024.07.08_18.39.10/tmp/synthesis/1-trimmed.no_pg.lib"
+
+Mon Jul 08 18:39:16 UTC 2024 - Executing "yosys -c /openlane/scripts/yosys/synth.tcl |& tee /dev/null /openlane/designs/digital_desing/runs/RUN_2024.07.08_18.39.10/logs/synthesis/1-synthesis.log"
+
+Mon Jul 08 18:39:21 UTC 2024 - Executing "sed -i.bak -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/openlane\/designs\/digital_desing\/runs\/RUN_2024.07.08_18.39.10\/results\/synthesis\/digital_cs.v/} /openlane/designs/digital_desing/runs/RUN_2024.07.08_18.39.10/config.tcl"
+
+Mon Jul 08 18:39:21 UTC 2024 - Executing "sed -i.bak /defparam/d /openlane/designs/digital_desing/runs/RUN_2024.07.08_18.39.10/results/synthesis/digital_cs.v"
+
+Mon Jul 08 18:39:22 UTC 2024 - Executing "sta -exit -no_init /openlane/scripts/openroad/sta/multi_corner.tcl |& tee /dev/null /openlane/designs/digital_desing/runs/RUN_2024.07.08_18.39.10/logs/synthesis/2-sta.log"
+
+Mon Jul 08 18:39:23 UTC 2024 - Executing "openroad -exit /openlane/scripts/openroad/floorplan.tcl |& tee /dev/null /openlane/designs/digital_desing/runs/RUN_2024.07.08_18.39.10/logs/floorplan/3-initial_fp.log"
+
+Mon Jul 08 18:39:24 UTC 2024 - Executing "openroad -exit -no_init -python /openlane/scripts/odbpy/snap_to_grid.py --output /openlane/designs/digital_desing/runs/RUN_2024.07.08_18.39.10/tmp/floorplan/3-minimized_pdn.txt --input-lef /openlane/designs/digital_desing/runs/RUN_2024.07.08_18.39.10/tmp/merged.nom.lef 0.6325000000000001 0.6799999999999999 1.2650000000000001 1.3599999999999999"
+
+Mon Jul 08 18:39:24 UTC 2024 - Executing "openroad -exit -no_init -python /openlane/scripts/odbpy/defutil.py extract_core_dims --output-data /openlane/designs/digital_desing/runs/RUN_2024.07.08_18.39.10/tmp/dimensions.txt --input-lef /openlane/designs/digital_desing/runs/RUN_2024.07.08_18.39.10/tmp/merged.nom.lef /openlane/designs/digital_desing/runs/RUN_2024.07.08_18.39.10/tmp/floorplan/3-initial_fp.def"
+
+Mon Jul 08 18:39:25 UTC 2024 - Executing "openroad -exit /openlane/scripts/openroad/ioplacer.tcl |& tee /dev/null /openlane/designs/digital_desing/runs/RUN_2024.07.08_18.39.10/logs/floorplan/4-io.log"
+
+Mon Jul 08 18:39:26 UTC 2024 - Executing "openroad -exit /openlane/scripts/openroad/tapcell.tcl |& tee /dev/null /openlane/designs/digital_desing/runs/RUN_2024.07.08_18.39.10/logs/floorplan/5-tap.log"
+
+Mon Jul 08 18:39:27 UTC 2024 - Executing "openroad -exit /openlane/scripts/openroad/pdn.tcl |& tee /dev/null /openlane/designs/digital_desing/runs/RUN_2024.07.08_18.39.10/logs/floorplan/6-pdn.log"
+

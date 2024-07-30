@@ -1,0 +1,24 @@
+Mon Jul 01 21:52:27 UTC 2024 - Executing "openroad -exit -no_init -python /openlane/scripts/odbpy/lefutil.py get_metal_layers -o /openlane/designs/digital_desing/runs/RUN_2024.07.01_21.52.27/tmp/layers.list /home/celina/.volare/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef"
+
+Mon Jul 01 21:52:33 UTC 2024 - Executing "/openlane/scripts/mergeLef.py -o /openlane/designs/digital_desing/runs/RUN_2024.07.01_21.52.27/tmp/merged.nom.lef -i /home/celina/.volare/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef {/home/celina/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef /home/celina/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef} |& tee /dev/null"
+
+Mon Jul 01 21:52:33 UTC 2024 - Executing "/openlane/scripts/mergeLef.py -o /openlane/designs/digital_desing/runs/RUN_2024.07.01_21.52.27/tmp/merged.min.lef -i /home/celina/.volare/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__min.tlef {/home/celina/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef /home/celina/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef} |& tee /dev/null"
+
+Mon Jul 01 21:52:33 UTC 2024 - Executing "/openlane/scripts/mergeLef.py -o /openlane/designs/digital_desing/runs/RUN_2024.07.01_21.52.27/tmp/merged.max.lef -i /home/celina/.volare/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__max.tlef {/home/celina/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef /home/celina/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef} |& tee /dev/null"
+
+Mon Jul 01 21:52:33 UTC 2024 - Executing "python3 /openlane/scripts/mergeLib.py --output /openlane/designs/digital_desing/runs/RUN_2024.07.01_21.52.27/tmp/synthesis/merged.lib --name sky130A_merged /home/celina/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
+
+Mon Jul 01 21:52:34 UTC 2024 - Executing "python3 /openlane/scripts/libtrim.py --cell-file /openlane/designs/digital_desing/runs/RUN_2024.07.01_21.52.27/tmp/synthesis/trimmed.lib.exclude.list --output /openlane/designs/digital_desing/runs/RUN_2024.07.01_21.52.27/tmp/synthesis/trimmed.lib /openlane/designs/digital_desing/runs/RUN_2024.07.01_21.52.27/tmp/synthesis/merged.lib"
+
+Mon Jul 01 21:52:35 UTC 2024 - Executing "python3 /openlane/scripts/libtrim.py --cell-file /openlane/designs/digital_desing/runs/RUN_2024.07.01_21.52.27/tmp/cts/cts.lib.exclude.list --output /openlane/designs/digital_desing/runs/RUN_2024.07.01_21.52.27/tmp/cts/cts.lib /home/celina/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
+
+Mon Jul 01 21:52:35 UTC 2024 - Executing "python3 /openlane/scripts/libtrim.py --cell-file /openlane/designs/digital_desing/runs/RUN_2024.07.01_21.52.27/tmp/cts/cts-fastest.lib.exclude.list --output /openlane/designs/digital_desing/runs/RUN_2024.07.01_21.52.27/tmp/cts/cts-fastest.lib /home/celina/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v95.lib"
+
+Mon Jul 01 21:52:37 UTC 2024 - Executing "python3 /openlane/scripts/libtrim.py --cell-file /openlane/designs/digital_desing/runs/RUN_2024.07.01_21.52.27/tmp/cts/cts-slowest.lib.exclude.list --output /openlane/designs/digital_desing/runs/RUN_2024.07.01_21.52.27/tmp/cts/cts-slowest.lib /home/celina/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib"
+
+Mon Jul 01 21:52:38 UTC 2024 - Executing "python3 /openlane/scripts/new_tracks.py -i /home/celina/.volare/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tracks.info -o /openlane/designs/digital_desing/runs/RUN_2024.07.01_21.52.27/tmp/routing/config.tracks"
+
+Mon Jul 01 21:52:38 UTC 2024 - Executing "echo {OpenLane 30ee1388932eb55a89ad84ee43997bfe3a386421} > /openlane/designs/digital_desing/runs/RUN_2024.07.01_21.52.27/OPENLANE_VERSION"
+
+Mon Jul 01 21:52:38 UTC 2024 - Executing "bash -c {verilator  --lint-only  -Wall  --Wno-DECLFILENAME  --top-module digital_cs  designs/digital_desing/src/digital_designs.v -Wno-fatal --relative-includes |& tee /openlane/designs/digital_desing/runs/RUN_2024.07.01_21.52.27/logs/synthesis/linter.log /dev/null}"
+

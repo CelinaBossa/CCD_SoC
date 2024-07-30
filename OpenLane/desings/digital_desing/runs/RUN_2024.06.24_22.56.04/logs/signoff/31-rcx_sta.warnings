@@ -1,0 +1,5 @@
+Warning: /openlane/designs/digital_desing/runs/RUN_2024.06.24_22.56.04/results/routing/pulse_generator.nl.v line 411, module sky130_fd_sc_hd__tapvpwrvgnd_1 not found. Creating black box for TAP_28.
+Warning: /openlane/designs/digital_desing/runs/RUN_2024.06.24_22.56.04/results/routing/pulse_generator.nl.v line 462, module sky130_fd_sc_hd__fill_1 not found. Creating black box for FILLER_0_0_55.
+Warning: /openlane/designs/digital_desing/runs/RUN_2024.06.24_22.56.04/results/routing/pulse_generator.nl.v line 465, module sky130_fd_sc_hd__fill_2 not found. Creating black box for FILLER_0_0_75.
+Warning: /openlane/designs/digital_desing/runs/RUN_2024.06.24_22.56.04/results/routing/pulse_generator.nl.v line 466, module sky130_ef_sc_hd__decap_12 not found. Creating black box for FILLER_0_1_3.
+[WARNING] Did not save OpenROAD database!

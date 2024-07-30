@@ -1,0 +1,33 @@
+digraph "digital_cs" {
+label="digital_cs";
+rankdir="LR";
+remincross=true;
+n1 [ shape=octagon, label="clk", color="black", fontcolor="black" ];
+n2 [ shape=diamond, label="count", color="black", fontcolor="black" ];
+n3 [ shape=octagon, label="enable", color="black", fontcolor="black" ];
+n4 [ shape=octagon, label="f_select", color="black", fontcolor="black" ];
+n5 [ shape=octagon, label="phi_l1", color="black", fontcolor="black" ];
+n6 [ shape=octagon, label="phi_l2", color="black", fontcolor="black" ];
+n7 [ shape=octagon, label="phi_p", color="black", fontcolor="black" ];
+n8 [ shape=octagon, label="phi_r", color="black", fontcolor="black" ];
+v0 [ label="13'0100000000100" ];
+x1 [shape=box, style=rounded, label="BUF", ];
+v2 [ label="1'0" ];
+x3 [shape=box, style=rounded, label="BUF", ];
+v4 [ label="1'0" ];
+x5 [shape=box, style=rounded, label="BUF", ];
+v6 [ label="1'0" ];
+x7 [shape=box, style=rounded, label="BUF", ];
+v8 [ label="1'0" ];
+x9 [shape=box, style=rounded, label="BUF", ];
+x1:e -> n2:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+x3:e -> n5:w [color="black", fontcolor="black", label=""];
+x5:e -> n6:w [color="black", fontcolor="black", label=""];
+x7:e -> n7:w [color="black", fontcolor="black", label=""];
+x9:e -> n8:w [color="black", fontcolor="black", label=""];
+v0:e -> x1:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+v2:e -> x3:w [color="black", fontcolor="black", label=""];
+v4:e -> x5:w [color="black", fontcolor="black", label=""];
+v6:e -> x7:w [color="black", fontcolor="black", label=""];
+v8:e -> x9:w [color="black", fontcolor="black", label=""];
+}

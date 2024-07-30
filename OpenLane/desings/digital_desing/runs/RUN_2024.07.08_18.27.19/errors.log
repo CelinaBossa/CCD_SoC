@@ -1,0 +1,21 @@
+[ERROR]: Yosys checks have failed: Encountered check error:
+Warning: multiple conflicting drivers for digital_cs.\gral_enable:
+    port Q[0] of cell $procdff$4184 ($dff)
+    port Q[0] of cell $auto$proc_dlatch.cc:427:proc_dlatch$4183 ($dlatch)
+
+child process exited abnormally
+[ERROR]: See the full report here: designs/digital_desing/runs/RUN_2024.07.08_18.27.19/reports/synthesis/1-synthesis_pre_synth.chk.rpt
+[ERROR]: Step 1 (synthesis) failed with error:
+-code 1 -level 0 -errorcode NONE -errorinfo {
+    while executing
+"throw_error"
+    (procedure "check_synth_misc" line 17)
+    invoked from within
+"check_synth_misc $report"
+    (procedure "run_synthesis_checkers" line 5)
+    invoked from within
+"run_synthesis_checkers $log $pre_synth_report"
+    (procedure "run_synthesis" line 19)
+    invoked from within
+"run_synthesis"} -errorline 1
+[ERROR]: Flow failed.

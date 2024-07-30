@@ -1,0 +1,35 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Mon Jul 22 20:21:49 2024
+[*]
+[dumpfile] "/home/ivogc/tesis/OpenLane/desings/signal_generator/rtl/wf_signal_generator.vcd"
+[dumpfile_mtime] "Mon Jul 22 20:17:47 2024"
+[dumpfile_size] 5162010
+[savefile] "/home/ivogc/tesis/OpenLane/desings/signal_generator/rtl/waves.gtkw"
+[timestart] 8848150000
+[size] 1920 1009
+[pos] -1958 171
+*-21.730694 8854460000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tb_signal_generator.
+[sst_width] 273
+[signals_width] 230
+[sst_expanded] 1
+[sst_vpaned_height] 579
+@24
+tb_signal_generator.dut.ciclos[1:0]
+tb_signal_generator.dut.contador[31:0]
+tb_signal_generator.dut.contador_waves[13:0]
+@28
+tb_signal_generator.dut.estado[1:0]
+tb_signal_generator.dut.sig_estado[1:0]
+tb_signal_generator.dut.i_clk
+tb_signal_generator.dut.i_enable
+@22
+tb_signal_generator.dut.i_f_select[3:0]
+@28
+tb_signal_generator.dut.o_phi_l1
+tb_signal_generator.dut.o_phi_l2
+tb_signal_generator.dut.o_phi_r
+tb_signal_generator.dut.o_phi_p
+[pattern_trace] 1
+[pattern_trace] 0

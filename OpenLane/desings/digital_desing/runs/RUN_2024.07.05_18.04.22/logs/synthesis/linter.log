@@ -1,0 +1,45 @@
+%Warning-PINCONNECTEMPTY: designs/digital_desing/src/digital_designs.v:53:43: Cell pin connected by name with empty reference: 'out_signal'
+   53 |     squared_wave_gen u1(.enable(enable), .out_signal( ));
+      |                                           ^~~~~~~~~~
+                          ... For warning description see https://verilator.org/warn/PINCONNECTEMPTY?v=5.009
+                          ... Use "/* verilator lint_off PINCONNECTEMPTY */" and lint_on around source to disable this message.
+%Warning-PINCONNECTEMPTY: designs/digital_desing/src/digital_designs.v:62:121: Cell pin connected by name with empty reference: 'comb_out'
+   62 |     pulse_generator gen_phi_p(.clk(clk), .rst(~enable), .DIVIDE_BY_N(min_exp + (f_select*16'h6429)), .sync_out(phi_p), .comb_out( ));
+      |                                                                                                                         ^~~~~~~~
+%Warning-UNUSEDSIGNAL: designs/digital_desing/src/digital_designs.v:108:10: Signal is not used: 'start_dly'
+                                                                          : ... In instance digital_cs.gen_phi_r
+  108 |     real start_dly;
+      |          ^~~~~~~~~
+%Warning-BLKSEQ: designs/digital_desing/src/digital_designs.v:138:24: Blocking assignment '=' in sequential logic process
+                                                                    : ... Suggest using delayed assignment '<='
+  138 |             out_signal = 1;
+      |                        ^
+%Warning-BLKSEQ: designs/digital_desing/src/digital_designs.v:140:38: Blocking assignment '=' in sequential logic process
+                                                                    : ... Suggest using delayed assignment '<='
+  140 |                 #(clk_on) out_signal = 0;
+      |                                      ^
+%Warning-BLKSEQ: designs/digital_desing/src/digital_designs.v:141:39: Blocking assignment '=' in sequential logic process
+                                                                    : ... Suggest using delayed assignment '<='
+  141 |                 #(clk_off) out_signal = 1;
+      |                                       ^
+%Warning-BLKSEQ: designs/digital_desing/src/digital_designs.v:143:24: Blocking assignment '=' in sequential logic process
+                                                                    : ... Suggest using delayed assignment '<='
+  143 |             out_signal = 0;
+      |                        ^
+%Warning-ZERODLY: designs/digital_desing/src/digital_designs.v:140:17: Unsupported: #0 delays do not schedule process resumption in the Inactive region
+  140 |                 #(clk_on) out_signal = 0;
+      |                 ^
+%Warning-MULTIDRIVEN: designs/digital_desing/src/digital_designs.v:33:16: Signal has multiple driving blocks with different clocking: 'digital_cs.counter'
+                      designs/digital_desing/src/digital_designs.v:45:9: ... Location of first driving block
+   45 |         counter <= counter + 1;  
+      |         ^~~~~~~
+                      designs/digital_desing/src/digital_designs.v:38:13: ... Location of other driving block
+   38 |             counter <= 0;
+      |             ^~~~~~~
+%Warning-MULTIDRIVEN: designs/digital_desing/src/digital_designs.v:32:9: Signal has multiple driving blocks with different clocking: 'digital_cs.enable_shifteo'
+                      designs/digital_desing/src/digital_designs.v:47:13: ... Location of first driving block
+   47 |             enable_shifteo <= 0;
+      |             ^~~~~~~~~~~~~~
+                      designs/digital_desing/src/digital_designs.v:37:13: ... Location of other driving block
+   37 |             enable_shifteo <= 1;
+      |             ^~~~~~~~~~~~~~

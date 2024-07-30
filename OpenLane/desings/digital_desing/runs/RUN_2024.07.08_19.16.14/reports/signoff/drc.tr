@@ -1,0 +1,48 @@
+  violation type: Metal3_spacing_lt_0dot3um_met3dot2
+    srcs: N/A N/A
+    bbox = ( 4.130, 13.440 ) - ( 4.160, 13.640 ) on Layer met3
+  violation type: Metal3_spacing_lt_0dot3um_met3dot2
+    srcs: N/A N/A
+    bbox = ( 4.160, 13.460 ) - ( 4.180, 13.640 ) on Layer met3
+  violation type: Metal3_spacing_lt_0dot3um_met3dot2
+    srcs: N/A N/A
+    bbox = ( 4.180, 13.460 ) - ( 4.300, 13.640 ) on Layer met3
+  violation type: Metal3_spacing_lt_0dot3um_met3dot2
+    srcs: N/A N/A
+    bbox = ( 4.160, 13.440 ) - ( 4.300, 13.460 ) on Layer met3
+  violation type: Metal3_spacing_lt_0dot3um_met3dot2
+    srcs: N/A N/A
+    bbox = ( 4.130, 13.435 ) - ( 4.300, 13.440 ) on Layer met3
+  violation type: Metal3_spacing_lt_0dot3um_met3dot2
+    srcs: N/A N/A
+    bbox = ( 3.830, 13.765 ) - ( 4.000, 14.065 ) on Layer met3
+  violation type: Metal3_spacing_lt_0dot3um_met3dot2
+    srcs: N/A N/A
+    bbox = ( 4.130, 13.760 ) - ( 4.300, 13.765 ) on Layer met3
+  violation type: Metal3_spacing_lt_0dot3um_met3dot2
+    srcs: N/A N/A
+    bbox = ( 4.130, 13.440 ) - ( 4.160, 13.760 ) on Layer met3
+  violation type: Metal3_spacing_lt_0dot3um_met3dot2
+    srcs: N/A N/A
+    bbox = ( 4.160, 13.740 ) - ( 4.300, 13.760 ) on Layer met3
+  violation type: Metal3_spacing_lt_0dot3um_met3dot2
+    srcs: N/A N/A
+    bbox = ( 4.160, 13.460 ) - ( 4.180, 13.740 ) on Layer met3
+  violation type: Metal3_spacing_lt_0dot3um_met3dot2
+    srcs: N/A N/A
+    bbox = ( 4.180, 13.460 ) - ( 4.300, 13.740 ) on Layer met3
+  violation type: Metal3_spacing_lt_0dot3um_met3dot2
+    srcs: N/A N/A
+    bbox = ( 4.160, 13.440 ) - ( 4.300, 13.460 ) on Layer met3
+  violation type: Metal3_spacing_lt_0dot3um_met3dot2
+    srcs: N/A N/A
+    bbox = ( 4.130, 13.435 ) - ( 4.300, 13.440 ) on Layer met3
+  violation type: Metal3_spacing_lt_0dot3um_met3dot2
+    srcs: N/A N/A
+    bbox = ( 3.830, 13.760 ) - ( 4.000, 14.065 ) on Layer met3
+  violation type: Metal3_spacing_lt_0dot3um_met3dot2
+    srcs: N/A N/A
+    bbox = ( 3.830, 13.640 ) - ( 4.000, 13.760 ) on Layer met3
+  violation type: Metal3_spacing_lt_0dot3um_met3dot2
+    srcs: N/A N/A
+    bbox = ( [INFO]:, Should ) - ( be, divided ) on Layer met3

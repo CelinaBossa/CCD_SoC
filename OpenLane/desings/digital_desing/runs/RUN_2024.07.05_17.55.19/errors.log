@@ -1,0 +1,8 @@
+[ERROR]: Step 0 (verilator_lint_check) failed with error:
+-code 1 -level 0 -errorcode NONE -errorinfo {wrong # args: should be "run_verilator"
+    while executing
+"run_verilator --timing"
+    (procedure "run_verilator_step" line 3)
+    invoked from within
+"run_verilator_step"} -errorline 1
+[ERROR]: Flow failed.

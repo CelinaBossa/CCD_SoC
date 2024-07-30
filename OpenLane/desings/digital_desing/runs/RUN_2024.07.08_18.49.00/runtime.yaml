@@ -1,0 +1,25 @@
+- status: 0 - openlane design prep
+  runtime_s: 5.38
+  runtime_ts: 0h0m5s384ms
+- status: 1 - synthesis - yosys
+  runtime_s: 6.03
+  runtime_ts: 0h0m6s32ms
+- status: 2 - sta - openroad
+  runtime_s: 0.69
+  runtime_ts: 0h0m0s687ms
+- status: 3 - floorplan initialization - openroad
+  runtime_s: 1.59
+  runtime_ts: 0h0m1s589ms
+- status: 4 - ioplace - openroad
+  runtime_s: 0.81
+  runtime_ts: 0h0m0s813ms
+- status: 5 - tap/decap insertion - openroad
+  runtime_s: 0.87
+  runtime_ts: 0h0m0s870ms
+---
+- status: routed
+  runtime_s: -1
+  runtime_ts: '-1'
+- status: flow failed
+  runtime_s: 19.0
+  runtime_ts: 0h0m19s0ms

@@ -1,0 +1,57 @@
+designs/digital_desing/src/digital_designs.v:114: Warning: converting real value 1.000000e+02 to binary 100.
+designs/digital_desing/src/digital_designs.v:115: Warning: converting real value 0.000000e+00 to binary 0.
+designs/digital_desing/src/digital_designs.v:116: Warning: converting real value 1.000000e+00 to binary 1.
+designs/digital_desing/src/digital_designs.v:114: Warning: converting real value 7.692308e+00 to binary 8.
+designs/digital_desing/src/digital_designs.v:115: Warning: converting real value 2.500000e-01 to binary 0.
+designs/digital_desing/src/digital_designs.v:116: Warning: converting real value 7.500000e-01 to binary 1.
+designs/digital_desing/src/digital_designs.v:114: Warning: converting real value 7.692308e+00 to binary 8.
+designs/digital_desing/src/digital_designs.v:115: Warning: converting real value 5.000000e-01 to binary 1.
+designs/digital_desing/src/digital_designs.v:116: Warning: converting real value 5.000000e-01 to binary 1.
+designs/digital_desing/src/digital_designs.v:114: Warning: converting real value 7.692308e+00 to binary 8.
+designs/digital_desing/src/digital_designs.v:115: Warning: converting real value 5.000000e-01 to binary 1.
+designs/digital_desing/src/digital_designs.v:116: Warning: converting real value 5.000000e-01 to binary 1.
+Warning: multiple conflicting drivers for $paramod$1de6e83b57250f489a4298b364363db428ea2b20\squared_wave_gen.\out_signal:
+Warning: multiple conflicting drivers for $paramod$16b66525c81909e6856c6221b16371e449274451\squared_wave_gen.\out_signal:
+Warning: multiple conflicting drivers for $paramod$f40fc4867c6a4cdbd81862ea685c0420c2f18062\squared_wave_gen.\out_signal:
+Warning: multiple conflicting drivers for squared_wave_gen.\out_signal:
+Warning: multiple conflicting drivers for digital_cs.\enable_shifteo:
+Warning: multiple conflicting drivers for digital_cs.\counter [31]:
+Warning: multiple conflicting drivers for digital_cs.\counter [30]:
+Warning: multiple conflicting drivers for digital_cs.\counter [29]:
+Warning: multiple conflicting drivers for digital_cs.\counter [28]:
+Warning: multiple conflicting drivers for digital_cs.\counter [27]:
+Warning: multiple conflicting drivers for digital_cs.\counter [26]:
+Warning: multiple conflicting drivers for digital_cs.\counter [25]:
+Warning: multiple conflicting drivers for digital_cs.\counter [24]:
+Warning: multiple conflicting drivers for digital_cs.\counter [23]:
+Warning: multiple conflicting drivers for digital_cs.\counter [22]:
+Warning: multiple conflicting drivers for digital_cs.\counter [21]:
+Warning: multiple conflicting drivers for digital_cs.\counter [20]:
+Warning: multiple conflicting drivers for digital_cs.\counter [19]:
+Warning: multiple conflicting drivers for digital_cs.\counter [18]:
+Warning: multiple conflicting drivers for digital_cs.\counter [17]:
+Warning: multiple conflicting drivers for digital_cs.\counter [16]:
+Warning: multiple conflicting drivers for digital_cs.\counter [15]:
+Warning: multiple conflicting drivers for digital_cs.\counter [14]:
+Warning: multiple conflicting drivers for digital_cs.\counter [13]:
+Warning: multiple conflicting drivers for digital_cs.\counter [12]:
+Warning: multiple conflicting drivers for digital_cs.\counter [11]:
+Warning: multiple conflicting drivers for digital_cs.\counter [10]:
+Warning: multiple conflicting drivers for digital_cs.\counter [9]:
+Warning: multiple conflicting drivers for digital_cs.\counter [8]:
+Warning: multiple conflicting drivers for digital_cs.\counter [7]:
+Warning: multiple conflicting drivers for digital_cs.\counter [6]:
+Warning: multiple conflicting drivers for digital_cs.\counter [5]:
+Warning: multiple conflicting drivers for digital_cs.\counter [4]:
+Warning: multiple conflicting drivers for digital_cs.\counter [3]:
+Warning: multiple conflicting drivers for digital_cs.\counter [2]:
+Warning: multiple conflicting drivers for digital_cs.\counter [1]:
+Warning: multiple conflicting drivers for digital_cs.\counter [0]:
+Warning: Driver-driver conflict for \enable_shifteo between cell $procdff$112.Q and constant 1'1 in digital_cs: Resolved using constant.
+Warning: Driver-driver conflict for \gen_phi_l2.out_signal between cell $flatten\gen_phi_l2.$procdff$92.Q and constant 1'0 in digital_cs: Resolved using constant.
+ABC: Warning: Detected 2 multi-output gates (for example, "sky130_fd_sc_hd__fa_1").
+Warning: Wire digital_cs.\phi_r is used but has no driver.
+Warning: Wire digital_cs.\phi_p is used but has no driver.
+Warning: Wire digital_cs.\phi_l2 is used but has no driver.
+Warning: Wire digital_cs.\phi_l1 is used but has no driver.
+Warnings: 50 unique messages, 55 total

@@ -1,0 +1,81 @@
+OpenROAD 41a51eaf4ca2171c92ff38afb91eb37bbd3f36da 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO]: Reading ODB at '/openlane/designs/digital_desing/runs/RUN_2024.07.08_19.51.34/results/floorplan/digital_cs.odb'…
+define_corners Typical
+read_liberty -corner Typical /home/celina/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+Using 1e-12 for capacitance...
+Using 1e+03 for resistance...
+Using 1e-09 for time...
+Using 1e+00 for voltage...
+Using 1e-03 for current...
+Using 1e-09 for power...
+Using 1e-06 for distance...
+Reading design constraints file at '/openlane/designs/digital_desing/runs/RUN_2024.07.08_19.51.34/tmp/floorplan/3-initial_fp.sdc'…
+[INFO]: Setting RC values...
+[INFO]: Setting signal min routing layer to: met1 and clock min routing layer to met1. 
+[INFO]: Setting signal max routing layer to: met5 and clock max routing layer to met5. 
+[INFO GPL-0002] DBU: 1000
+[INFO GPL-0003] SiteSize: 460 2720
+[INFO GPL-0004] CoreAreaLxLy: 5520 10880
+[INFO GPL-0005] CoreAreaUxUy: 44160 48960
+[INFO GPL-0006] NumInstances: 48
+[INFO GPL-0007] NumPlaceInstances: 4
+[INFO GPL-0008] NumFixedInstances: 44
+[INFO GPL-0009] NumDummyInstances: 0
+[INFO GPL-0010] NumNets: 14
+[INFO GPL-0011] NumPins: 18
+[INFO GPL-0012] DieAreaLxLy: 0 0
+[INFO GPL-0013] DieAreaUxUy: 49790 60510
+[INFO GPL-0014] CoreAreaLxLy: 5520 10880
+[INFO GPL-0015] CoreAreaUxUy: 44160 48960
+[INFO GPL-0016] CoreArea: 1471411200
+[INFO GPL-0017] NonPlaceInstsArea: 125120000
+[INFO GPL-0018] PlaceInstsArea: 15014400
+[INFO GPL-0019] Util(%): 1.12
+[INFO GPL-0020] StdInstsArea: 15014400
+[INFO GPL-0021] MacroInstsArea: 0
+[InitialPlace]  Iter: 1 CG residual: 0.00000004 HPWL: 271400
+[InitialPlace]  Iter: 2 CG residual: 0.00000000 HPWL: 68280
+[InitialPlace]  Iter: 3 CG residual: 0.00000000 HPWL: 68280
+[InitialPlace]  Iter: 4 CG residual: 0.00000000 HPWL: 68280
+[InitialPlace]  Iter: 5 CG residual: 0.00000000 HPWL: 68280
+[INFO GPL-0031] FillerInit: NumGCells: 39
+[INFO GPL-0032] FillerInit: NumGNets: 14
+[INFO GPL-0033] FillerInit: NumGPins: 18
+[INFO GPL-0023] TargetDensity: 0.11
+[INFO GPL-0024] AveragePlaceInstArea: 3753600
+[INFO GPL-0025] IdealBinArea: 34123636
+[INFO GPL-0026] IdealBinCnt: 43
+[INFO GPL-0027] TotalBinArea: 1471411200
+[INFO GPL-0028] BinCnt: 4 4
+[INFO GPL-0029] BinSize: 9660 9520
+[INFO GPL-0030] NumBins: 16
+[NesterovSolve] Iter: 1 overflow: 0 HPWL: 67329
+[INFO GPL-0100] worst slack 1e+30
+[WARNING GPL-0102] No slacks found. Timing-driven mode disabled.
+[NesterovSolve] Snapshot saved at iter = 0
+[INFO GPL-0075] Routability numCall: 1 inflationIterCnt: 1 bloatIterCnt: 0
+[INFO GPL-0036] TileLxLy: 0 0
+[INFO GPL-0037] TileSize: 6900 6900
+[INFO GPL-0038] TileCnt: 7 8
+[INFO GPL-0039] numRoutingLayers: 6
+[INFO GPL-0040] NumTiles: 56
+[INFO GPL-0063] TotalRouteOverflowH2: 0.0
+[INFO GPL-0064] TotalRouteOverflowV2: 0.0
+[INFO GPL-0065] OverflowTileCnt2: 0
+[INFO GPL-0066] 0.5%RC: 0.6000000238418579
+[INFO GPL-0067] 1.0%RC: 0.6000000238418579
+[INFO GPL-0068] 2.0%RC: 0.5833333532015482
+[INFO GPL-0069] 5.0%RC: 0.5666666825612386
+[INFO GPL-0070] 0.5rcK: 1.0
+[INFO GPL-0071] 1.0rcK: 1.0
+[INFO GPL-0072] 2.0rcK: 0.0
+[INFO GPL-0073] 5.0rcK: 0.0
+[INFO GPL-0074] FinalRC: 0.6
+[NesterovSolve] Finished with Overflow: 0.000000
+Setting global connections for newly added cells…
+Writing OpenROAD database to '/openlane/designs/digital_desing/runs/RUN_2024.07.08_19.51.34/tmp/placement/7-global.odb'…
+Writing netlist to '/openlane/designs/digital_desing/runs/RUN_2024.07.08_19.51.34/tmp/placement/7-global.nl.v'…
+Writing powered netlist to '/openlane/designs/digital_desing/runs/RUN_2024.07.08_19.51.34/tmp/placement/7-global.pnl.v'…
+Writing layout to '/openlane/designs/digital_desing/runs/RUN_2024.07.08_19.51.34/tmp/placement/7-global.def'…

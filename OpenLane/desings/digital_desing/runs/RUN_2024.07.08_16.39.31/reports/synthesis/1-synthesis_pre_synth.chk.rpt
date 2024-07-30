@@ -1,0 +1,16 @@
+
+17. Executing CHECK pass (checking for obvious problems).
+Checking module digital_cs...
+Warning: multiple conflicting drivers for digital_cs.\phi_p:
+    port Q[0] of cell $procdff$16446 ($dff)
+    port Q[0] of cell $procdff$16440 ($dff)
+Warning: multiple conflicting drivers for digital_cs.\phi_l2:
+    port Q[0] of cell $procdff$16447 ($dff)
+    port Q[0] of cell $procdff$16441 ($dff)
+Warning: multiple conflicting drivers for digital_cs.\phi_l1:
+    port Q[0] of cell $procdff$16448 ($dff)
+    port Q[0] of cell $procdff$16442 ($dff)
+Warning: multiple conflicting drivers for digital_cs.\phi_r:
+    port Q[0] of cell $procdff$16449 ($dff)
+    port Q[0] of cell $procdff$16443 ($dff)
+Found and reported 4 problems.
