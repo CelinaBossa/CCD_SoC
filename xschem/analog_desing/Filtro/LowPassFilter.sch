@@ -13,7 +13,7 @@ N 170 90 220 90 {
 lab=Vin}
 C {/usr/local/share/pdk/sky130B/libs.tech/xschem/sky130_fd_pr/cap_mim_m3_1.sym} 330 120 0 0 {name=C1 model=cap_mim_m3_1 W=1 L=1 MF=1 spiceprefix=X}
 C {/usr/local/share/pdk/sky130B/libs.tech/xschem/sky130_fd_pr/res_generic_po.sym} 250 90 3 0 {name=R1
-W=0.0482
+W=0.0503
 L=10
 model=res_generic_po
 spiceprefix=X
