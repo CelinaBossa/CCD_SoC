@@ -57,7 +57,7 @@ Aqui se debe seleccionar arriba a la izquierda donde dice **testbench** y seleci
 En resumen, teniendo en cuenta todas las consideraciones mencionadas, solo requerimos 3 lineas para poder verificar simular y visualizar las formas de onda de nuestro testbench. las cuales son las siguientes:
 1. Compilar nuestro diseño
 ```sh
-iverilog -o testbench tb_mi_bloque.v
+iverilog -o testbench tb_mi_bloque.v mi_modulo.v
 ```
 2. Ejecutar la simualcion y generar archivo de ondas
 ```sh
