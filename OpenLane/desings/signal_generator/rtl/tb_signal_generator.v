@@ -52,6 +52,7 @@ module tb_signal_generator();
         i_f_select = 4'b1000;
 
         #1500000;
+        i_f_select = 4'b1000;
         #40000;
         #40000;
         // Deshabilita la FSM

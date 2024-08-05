@@ -88,13 +88,14 @@
      output reg          o_phi_r
  );
 
-localparam [31:0] MIN_TIEMPO_REQ =   32'h2012;
+localparam [31:0] MIN_TIEMPO_REQ =   32'h1009;
 
-
+// REGISTROS INTERNOS
 reg [31:0]  contador;
 reg [13:0]  contador_waves;
 reg [3:0]   f_selected;
 reg [1:0]   estado, sig_estado, ciclos;
+reg pulse_ended;
  
 
 // DECODIFICACION DE LOS ESTADOS
@@ -125,17 +126,27 @@ always @(posedge i_clk) begin
         f_selected <= i_f_select;
 end
 
+//FLAG PARA CONTROLAR EL FINAL DEL PULSO
+always @( i_clk) begin
+    if (~i_enable )
+        pulse_ended <= 0;
+    else if (estado == PULSE_HPND  && sig_estado == SHIFT_CHARGES)
+        pulse_ended <= ~pulse_ended;
+    else if (estado == HOLD_CAPTURE )
+        pulse_ended <= 0;
+        
+end
 //CONTADOR PRICIPAL
 always @(posedge i_clk) begin
     if (~i_enable )
         contador <= 0;
-    else if (estado == PULSE_HPND  && sig_estado == SHIFT_CHARGES)
+    else if (pulse_ended)
         contador <= 0;
-    else if (contador <= 32'hF00000)
+    else
         contador <= contador + 1;
 end
 //CONTADOR DE CILCOS DE RELOJ PARA GENERAR LAS WF
-always @(posedge i_clk ) begin
+always @( i_clk ) begin
     if (~i_enable )
         ciclos <= 0;
     else if ((ciclos < 2'b11) && (estado == SHIFT_CHARGES) )
@@ -144,18 +155,17 @@ always @(posedge i_clk ) begin
         ciclos <= 0;
 end
 //CONTADOR DE VECES QUE SE GENERARON LAS ONDAS PHI_L1, PHI_L2 Y PHI_R
-always @(posedge i_clk ) begin
+always @( i_clk ) begin
     if (~i_enable )
         contador_waves <= 0;
     else if (estado == PULSE_HPND)
         contador_waves <= 0;
     else if (ciclos == 2'b11  )
         contador_waves <= contador_waves + 1;
-    
 end
 
 // TRANSCICION SINCRONICA DE ESTADO
-always @(posedge i_clk) begin
+always @( i_clk) begin
     if ( ~i_enable )
     	estado <= INITIAL_SETUP;
     else 
@@ -163,10 +173,10 @@ always @(posedge i_clk) begin
 end
 
 //DECODIFICACION DEL SIGUIENTE ESTADO
-always @(*) begin
+always @(i_enable, contador, contador_waves, sig_estado) begin
     case (estado)
     INITIAL_SETUP: begin
-        if ( ~i_enable )
+        if ( ~i_enable)
     	    sig_estado = INITIAL_SETUP;
         else 
     	    sig_estado = SHIFT_CHARGES;   
