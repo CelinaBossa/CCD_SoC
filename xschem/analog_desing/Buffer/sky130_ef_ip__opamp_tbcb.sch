@@ -12,8 +12,6 @@ N 1260 -1300 1350 -1300 {
 lab=out}
 N 1350 -1300 1420 -1300 {
 lab=out}
-N 1260 -1240 1350 -1240 {
-lab=GND}
 N 610 -1280 610 -1260 {
 lab=in}
 N 780 -1210 780 -1170 {
@@ -40,27 +38,19 @@ N 880 -1170 880 -1070 {
 lab=GND}
 N 470 -1070 1260 -1070 {
 lab=GND}
-N 1260 -1240 1260 -1070 {
-lab=GND}
 N 610 -1200 610 -1070 {
 lab=GND}
 N 470 -1240 470 -1070 {
 lab=GND}
 N 780 -1110 780 -1070 {
 lab=GND}
+N 700 -1340 700 -1300 {
+lab=in}
+N 700 -1240 700 -1070 {
+lab=GND}
 C {vsource.sym} 470 -1270 0 0 {name=V1 value=1.8}
-C {res.sym} 1260 -1270 0 0 {name=R1
-value=20k
-footprint=1206
-device=resistor
-m=1}
 C {opin.sym} 1420 -1300 0 0 {name=p1 lab=out}
 C {vsource.sym} 610 -1230 0 0 {name=V2 value="sine(0.65 0.65 1k)"}
-C {capa.sym} 1350 -1270 0 0 {name=C1
-m=1
-value=4p
-footprint=1206
-device="ceramic capacitor"}
 C {ngspice_probe.sym} 1380 -1300 0 0 {name=r1}
 C {ngspice_probe.sym} 640 -1340 0 0 {name=r3}
 C {devices/title-2.sym} -700 -190 0 0 {name=l2 author="Tim Edwards" rev=1.0}
@@ -76,3 +66,8 @@ C {sky130_ef_ip__opamp.sym} 1030 -1300 0 0 {name=x1}
 C {vsource.sym} 780 -1140 0 0 {name=V3 value=1.8}
 C {gnd.sym} 740 -1070 0 0 {name=l4 lab=GND}
 C {lab_pin.sym} 780 -1210 0 0 {name=p2 sig_type=std_logic lab=ena}
+C {res.sym} 700 -1270 0 0 {name=R2
+value=225
+footprint=1206
+device=resistor
+m=1}
