@@ -326,15 +326,11 @@ N 1210 -450 1210 -420 {
 lab=vss}
 N 1210 -420 1310 -420 {
 lab=vss}
-N 2260 -690 2260 -610 {
+N 2250 -690 2250 -630 {
 lab=inp}
-N 2260 -550 2260 -460 {
+N 2250 -570 2250 -460 {
 lab=vss}
-N 2150 -460 2260 -460 {
-lab=vss}
-N 2280 -580 2280 -460 {
-lab=vss}
-N 2260 -460 2280 -460 {
+N 2150 -460 2250 -460 {
 lab=vss}
 C {/usr/local/share/pdk/sky130A/libs.tech/xschem/sky130_fd_pr/pfet_g5v0d10v5.sym} 2160 -800 0 0 {name=M4
 L=0.5
@@ -699,8 +695,8 @@ model=diode_pw2nd_05v5
 area=3.6e11
 }
 C {lab_pin.sym} 1310 -420 0 1 {name=p29 sig_type=std_logic lab=vss}
-C {/usr/local/share/pdk/sky130A/libs.tech/xschem/sky130_fd_pr/res_xhigh_po.sym} 2260 -580 2 0 {name=R2
-L=0.45
-model=res_xhigh_po_0p35
-spiceprefix=X
-mult=4}
+C {/usr/local/share/pdk/sky130A/libs.tech/xschem/sky130_fd_pr/res_generic_l1.sym} 2250 -600 0 0 {name=R3
+W=0.3
+L=5.533
+model=res_generic_l1
+mult=1}

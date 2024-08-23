@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1723064828
+timestamp 1723585901
 << error_s >>
 rect 111 -1798 157 -1772
 rect 83 -1826 185 -1800
@@ -114,7 +114,6 @@ rect 95292 -3853 95307 -3612
 rect 95326 -3646 95361 -3612
 rect 95326 -3853 95360 -3646
 rect 95326 -3887 95341 -3853
-rect 95690 -3885 95714 -3517
 << metal1 >>
 rect 0 0 200 200
 rect 0 -400 200 -200
@@ -122,125 +121,125 @@ rect 0 -800 200 -600
 rect 0 -1200 200 -1000
 rect 0 -1600 200 -1400
 rect 0 -2000 200 -1800
-use sky130_fd_pr__res_generic_l1_M53S24  R3
-timestamp 1723064828
-transform 1 0 95673 0 1 -3701
-box -17 -241 41 241
-use sky130_fd_pr__diode_pw2nd_05v5_FT76RJ  XDD1 ~/Tesis/magic
-timestamp 1723064828
+use sky130_fd_pr__diode_pw2nd_05v5_FT76RJ  XDD1
+timestamp 1723585349
 transform 1 0 94356 0 1 -3588
 box -183 -183 183 183
 use sky130_fd_pr__diode_pw2nd_05v5_FT76RJ  XDD2
-timestamp 1723064828
+timestamp 1723585349
 transform 1 0 95160 0 1 -3706
 box -183 -183 183 183
 use sky130_fd_pr__diode_pw2nd_05v5_FT76RJ  XDD3
-timestamp 1723064828
+timestamp 1723585349
 transform 1 0 95473 0 1 -3759
 box -183 -183 183 183
-use sky130_fd_pr__nfet_g5v0d10v5_UNEQ2N  XM1 ~/Tesis/magic
-timestamp 1723064828
+use sky130_fd_pr__nfet_g5v0d10v5_UNEQ2N  XM1
+timestamp 1723585349
 transform 1 0 58663 0 1 -2815
 box -278 -358 278 358
 use sky130_fd_pr__nfet_g5v0d10v5_UNEQ2N  XM2
-timestamp 1723064828
+timestamp 1723585349
 transform 1 0 59154 0 1 -2880
 box -278 -358 278 358
-use sky130_fd_pr__pfet_g5v0d10v5_KLNSY6  XM3 ~/Tesis/magic
-timestamp 1723064828
+use sky130_fd_pr__pfet_g5v0d10v5_KLNSY6  XM3
+timestamp 1723585349
 transform 1 0 59724 0 1 -2936
 box -387 -397 387 397
 use sky130_fd_pr__pfet_g5v0d10v5_KLNSY6  XM4
-timestamp 1723064828
+timestamp 1723585349
 transform 1 0 292 0 1 -1698
 box -387 -397 387 397
 use sky130_fd_pr__pfet_g5v0d10v5_KLNSY6  XM5
-timestamp 1723064828
+timestamp 1723585349
 transform 1 0 971 0 1 -1793
 box -387 -397 387 397
 use sky130_fd_pr__pfet_g5v0d10v5_KLNSY6  XM6
-timestamp 1723064828
+timestamp 1723585349
 transform 1 0 60403 0 1 -3031
 box -387 -397 387 397
 use sky130_fd_pr__nfet_g5v0d10v5_UNEQ2N  XM7
-timestamp 1723064828
+timestamp 1723585349
 transform 1 0 61003 0 1 -3135
 box -278 -358 278 358
-use sky130_fd_pr__nfet_03v3_nvt_UNEQ2N  XM8 ~/Tesis/magic
-timestamp 1723064828
+use sky130_fd_pr__nfet_03v3_nvt_UNEQ2N  XM8
+timestamp 1723585349
 transform 1 0 61494 0 1 -3200
 box -278 -358 278 358
 use sky130_fd_pr__nfet_g5v0d10v5_UNEQ2N  XM9
-timestamp 1723064828
+timestamp 1723585349
 transform 1 0 1571 0 1 -1897
 box -278 -358 278 358
-use sky130_fd_pr__nfet_g5v0d10v5_H7BQ24  XM10 ~/Tesis/magic
-timestamp 1723064828
+use sky130_fd_pr__nfet_g5v0d10v5_H7BQ24  XM10 ~/Tesis/magic/buffer/paramcells
+timestamp 1723585349
 transform 1 0 2299 0 1 -1962
 box -515 -358 515 358
 use sky130_fd_pr__nfet_03v3_nvt_UNEQ2N  XM11
-timestamp 1723064828
+timestamp 1723585349
 transform 1 0 61985 0 1 -3265
 box -278 -358 278 358
-use sky130_fd_pr__pfet_g5v0d10v5_54RBUL  XM12 ~/Tesis/magic
-timestamp 1723064828
+use sky130_fd_pr__pfet_g5v0d10v5_54RBUL  XM12
+timestamp 1723585349
 transform 1 0 78197 0 1 -3321
 box -16029 -397 16029 397
 use sky130_fd_pr__nfet_g5v0d10v5_UNEQ2N  XM13
-timestamp 1723064828
+timestamp 1723585349
 transform 1 0 94752 0 1 -3478
 box -278 -358 278 358
 use sky130_fd_pr__pfet_g5v0d10v5_54RBUL  XM20
-timestamp 1723064828
+timestamp 1723585349
 transform 1 0 19097 0 1 -2071
 box -16029 -397 16029 397
-use sky130_fd_pr__nfet_g5v0d10v5_A3MY9Q  XM22 ~/Tesis/magic
-timestamp 1723064828
+use sky130_fd_pr__nfet_g5v0d10v5_A3MY9Q  XM22
+timestamp 1723585349
 transform 1 0 44740 0 1 -2175
 box -9679 -358 9679 358
 use sky130_fd_pr__nfet_g5v0d10v5_UNEQ2N  XM24
-timestamp 1723064828
+timestamp 1723585349
 transform 1 0 54632 0 1 -2240
 box -278 -358 278 358
-use sky130_fd_pr__pfet_g5v0d10v5_KLAZY6  XM25 ~/Tesis/magic
-timestamp 1723064828
+use sky130_fd_pr__pfet_g5v0d10v5_KLAZY6  XM25
+timestamp 1723585349
 transform 1 0 55123 0 1 -2296
 box -308 -397 308 397
 use sky130_fd_pr__pfet_g5v0d10v5_KLNSY6  XM26
-timestamp 1723064828
+timestamp 1723585349
 transform 1 0 55723 0 1 -2391
 box -387 -397 387 397
 use sky130_fd_pr__pfet_g5v0d10v5_KLNSY6  XM27
-timestamp 1723064828
+timestamp 1723585349
 transform 1 0 56402 0 1 -2486
 box -387 -397 387 397
 use sky130_fd_pr__pfet_g5v0d10v5_KLNSY6  XM28
-timestamp 1723064828
+timestamp 1723585349
 transform 1 0 57081 0 1 -2581
 box -387 -397 387 397
 use sky130_fd_pr__nfet_g5v0d10v5_UNEQ2N  XM29
-timestamp 1723064828
+timestamp 1723585349
 transform 1 0 57681 0 1 -2685
 box -278 -358 278 358
 use sky130_fd_pr__nfet_g5v0d10v5_UNEQ2N  XM30
-timestamp 1723064828
+timestamp 1723585349
 transform 1 0 58172 0 1 -2750
 box -278 -358 278 358
-use sky130_fd_pr__res_xhigh_po_0p35_E5287M  XR1 ~/Tesis/magic
-timestamp 1723064828
+use sky130_fd_pr__res_xhigh_po_0p35_E5287M  XR1
+timestamp 1723585349
 transform 1 0 2962 0 1 8209
 box -201 -10582 201 10582
+use sky130_fd_pr__res_xhigh_po_0p35_HT39D6  XR2
+timestamp 1723585349
+transform 1 0 97290 0 1 -3344
+box -201 -683 201 683
 << labels >>
-flabel metal1 0 0 200 200 0 FreeSans 128 0 0 0 vdd
+flabel metal1 0 0 200 200 0 FreeSans 256 0 0 0 vdd
 port 0 nsew
-flabel metal1 0 -400 200 -200 0 FreeSans 128 0 0 0 vss
+flabel metal1 0 -400 200 -200 0 FreeSans 256 0 0 0 out
 port 1 nsew
-flabel metal1 0 -800 200 -600 0 FreeSans 128 0 0 0 out
+flabel metal1 0 -800 200 -600 0 FreeSans 256 0 0 0 ena
 port 2 nsew
-flabel metal1 0 -1200 200 -1000 0 FreeSans 128 0 0 0 inm
+flabel metal1 0 -1200 200 -1000 0 FreeSans 256 0 0 0 vss
 port 3 nsew
-flabel metal1 0 -1600 200 -1400 0 FreeSans 128 0 0 0 inp
+flabel metal1 0 -1600 200 -1400 0 FreeSans 256 0 0 0 inp
 port 4 nsew
-flabel metal1 0 -2000 200 -1800 0 FreeSans 128 0 0 0 ena
+flabel metal1 0 -2000 200 -1800 0 FreeSans 256 0 0 0 inm
 port 5 nsew
 << end >>
