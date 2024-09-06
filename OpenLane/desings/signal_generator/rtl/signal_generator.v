@@ -45,6 +45,7 @@ localparam  [1:0] INITIAL_SETUP   = 2'b00;
 localparam  [1:0] SHIFT_CHARGES   = 2'b01;
 localparam  [1:0] HOLD_CAPTURE    = 2'b10;
 localparam  [1:0] PULSE_HPND      = 2'b11;
+localparam  PHI_P_WIDTH		  = 18;	
 
 //INICIALIZACION DE REGISTROS
 /*
@@ -121,8 +122,11 @@ end
 always @(*) begin
     case (estado)
     INITIAL_SETUP: begin
-        if (contador_waves == 0)
-    	sig_estado = SHIFT_CHARGES;   
+        if(( contador > PHI_P_WIDTH) && (contador_waves == 0))
+    	    sig_estado = SHIFT_CHARGES;   
+        else 
+            sig_estado = INITIAL_SETUP; 
+	
     end
     SHIFT_CHARGES: begin
         if ( contador_waves <= 2051 )
@@ -137,7 +141,7 @@ always @(*) begin
             sig_estado = PULSE_HPND;  
     end
     PULSE_HPND: begin
-        if ( contador <= (MIN_TIEMPO_REQ + (f_selected * PASO_DEF ) + 18 )) //los 18 ciclos son para los 700ns
+        if ( contador <= (MIN_TIEMPO_REQ + (f_selected * PASO_DEF ) + 4*PHI_P_WIDTH )) // PHI_P_WIDTH  >  320ns
             sig_estado = PULSE_HPND;
         else 
             sig_estado = SHIFT_CHARGES;  
@@ -179,7 +183,7 @@ always @(*) begin
 end
 
 always @(*) begin
-    if ((estado==PULSE_HPND))
+    if ((estado==PULSE_HPND) ||(estado==INITIAL_SETUP) )
         o_phi_p =1;
     else 
         o_phi_p =0;    
