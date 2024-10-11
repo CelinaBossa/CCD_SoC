@@ -5,11 +5,9 @@ VERSION 5.7 ;
 MACRO sky130_ef_ip__opamp
   CLASS BLOCK ;
   FOREIGN sky130_ef_ip__opamp ;
-  ORIGIN 25.170 19.505 ;
-  SIZE 39.255 BY 52.710 ;
+  ORIGIN 31.350 24.580 ;
+  SIZE 52.910 BY 62.500 ;
   PIN vdd
-    DIRECTION INOUT ;
-    USE POWER ;
     ANTENNADIFFAREA 186.130493 ;
     PORT
       LAYER nwell ;
@@ -865,16 +863,30 @@ MACRO sky130_ef_ip__opamp
         RECT -21.810 10.630 11.995 11.325 ;
         RECT -21.810 9.150 -20.700 10.630 ;
         RECT -21.810 8.455 11.995 9.150 ;
+        RECT -27.390 7.010 -25.700 7.240 ;
         RECT -21.810 7.225 -20.700 8.455 ;
-        RECT -21.810 5.885 11.815 7.225 ;
+        RECT -21.810 7.010 11.815 7.225 ;
+        RECT -27.390 6.000 11.815 7.010 ;
+        RECT -27.390 5.650 -25.700 6.000 ;
+        RECT -21.810 5.885 11.815 6.000 ;
         RECT -21.810 5.530 -20.700 5.885 ;
         RECT 4.885 3.260 5.410 5.885 ;
         RECT 7.865 -17.455 13.525 -16.100 ;
+      LAYER met3 ;
+        RECT -27.300 5.785 -25.850 7.135 ;
+      LAYER met4 ;
+        RECT -27.390 33.300 16.870 34.950 ;
+        RECT -27.255 5.805 -25.895 7.115 ;
+        RECT -27.390 -21.200 16.870 -19.550 ;
+      LAYER met5 ;
+        RECT -27.390 33.170 -25.710 34.950 ;
+        RECT 15.160 33.310 16.860 34.950 ;
+        RECT -27.390 -20.550 -25.700 33.170 ;
+        RECT -27.390 -21.200 -25.710 -20.550 ;
+        RECT 15.160 -21.200 16.840 33.310 ;
     END
   END vdd
   PIN out
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
     ANTENNADIFFAREA 79.169998 ;
     PORT
       LAYER li1 ;
@@ -1963,8 +1975,6 @@ MACRO sky130_ef_ip__opamp
     END
   END out
   PIN ena
-    DIRECTION INPUT ;
-    USE SIGNAL ;
     ANTENNAGATEAREA 0.860000 ;
     ANTENNADIFFAREA 0.360000 ;
     PORT
@@ -1991,8 +2001,6 @@ MACRO sky130_ef_ip__opamp
     END
   END ena
   PIN vss
-    DIRECTION INOUT ;
-    USE GROUND ;
     ANTENNADIFFAREA 86.656197 ;
     PORT
       LAYER pwell ;
@@ -2366,18 +2374,22 @@ MACRO sky130_ef_ip__opamp
       LAYER met2 ;
         RECT -25.170 2.940 -24.660 4.310 ;
         RECT -25.170 -0.120 -24.650 2.940 ;
+        RECT -31.350 -1.890 -29.710 -1.650 ;
         RECT -25.170 -1.740 -24.660 -0.120 ;
         RECT -24.410 -1.740 -23.640 -1.690 ;
         RECT -23.400 -1.740 -22.710 4.310 ;
         RECT -21.960 -1.740 -20.605 0.220 ;
-        RECT -25.170 -1.980 -20.605 -1.740 ;
-        RECT -25.160 -2.655 -20.605 -1.980 ;
+        RECT -31.350 -1.900 -25.540 -1.890 ;
+        RECT -25.170 -1.900 -20.605 -1.740 ;
+        RECT -31.350 -2.655 -20.605 -1.900 ;
         RECT 1.195 -2.655 1.630 -0.395 ;
         RECT 2.800 -2.655 3.235 -0.360 ;
         RECT 4.395 -2.655 4.830 -0.360 ;
         RECT 6.560 -2.655 6.995 -0.365 ;
-        RECT -25.160 -2.900 11.355 -2.655 ;
+        RECT -31.350 -2.900 11.355 -2.655 ;
+        RECT -31.350 -2.910 -25.540 -2.900 ;
         RECT -23.400 -2.910 -22.710 -2.900 ;
+        RECT -31.350 -3.200 -29.710 -2.910 ;
         RECT -21.960 -3.425 11.355 -2.900 ;
         RECT -21.960 -5.015 -20.605 -3.425 ;
         RECT -21.965 -5.710 11.915 -5.015 ;
@@ -2386,11 +2398,21 @@ MACRO sky130_ef_ip__opamp
         RECT -21.960 -9.195 -20.605 -7.800 ;
         RECT -21.960 -9.890 11.915 -9.195 ;
         RECT -21.960 -12.360 -20.605 -9.890 ;
+      LAYER met3 ;
+        RECT -31.250 -3.065 -29.800 -1.725 ;
+      LAYER met4 ;
+        RECT -31.330 36.050 21.520 37.910 ;
+        RECT -31.205 -3.055 -29.845 -1.745 ;
+        RECT -31.330 -24.580 21.550 -22.730 ;
+      LAYER met5 ;
+        RECT -31.330 35.580 -29.720 37.910 ;
+        RECT -31.340 -21.200 -29.720 35.580 ;
+        RECT -31.330 -24.570 -29.720 -21.200 ;
+        RECT 19.910 -22.730 21.520 37.920 ;
+        RECT 19.910 -24.580 21.560 -22.730 ;
     END
   END vss
   PIN inp
-    DIRECTION INPUT ;
-    USE SIGNAL ;
     ANTENNAGATEAREA 2.360000 ;
     ANTENNADIFFAREA 0.360000 ;
     PORT
@@ -2437,8 +2459,6 @@ MACRO sky130_ef_ip__opamp
     END
   END inp
   PIN inm
-    DIRECTION INPUT ;
-    USE SIGNAL ;
     ANTENNAGATEAREA 2.360000 ;
     ANTENNADIFFAREA 0.360000 ;
     PORT
