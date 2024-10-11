@@ -66,7 +66,7 @@ module tb_signal_generator #(
     
     // Generación del reloj
     initial begin
-        i_clk = 0;
+        i_clk = 1;
         forever #10 i_clk = ~i_clk; // Periodo de 1us (1us/2 = 0.5us para cada flanco)
     end
 
@@ -88,18 +88,112 @@ module tb_signal_generator #(
         i_wb_stb = 32'b1;
         i_wb_cyc = 32'b1;
         i_wb_we = 32'b1;
-
-        // Deja correr la simulación por un tiempo
-        #1000;
         
         i_wb_addr = FREQUENCY_ADDRESS;
         i_wb_data = 32'b0;
 
-        // Deja correr la simulación por un tiempo
-        #1000;
+        i_wb_addr = ENABLE_ADDRESS;
+        i_wb_data = 32'b0;
+        i_wb_data = 32'b1;
 
         i_wb_addr = CLOCK_ADDRESS;
+        i_wb_data = 32'b0;
+        #10
         i_wb_data = 32'b1;
+        #10
+        i_wb_data = 32'b0;
+        #10
+        i_wb_data = 32'b1;
+        #10
+        i_wb_data = 32'b0;
+        #10
+        i_wb_data = 32'b1;
+        #10
+        i_wb_data = 32'b0;
+        #10
+        i_wb_data = 32'b1;
+        #10
+        i_wb_data = 32'b0;
+        #10
+        i_wb_data = 32'b1;
+        #10
+        i_wb_data = 32'b0;
+        #10
+        i_wb_data = 32'b1;
+        #10
+        i_wb_data = 32'b0;
+        #10
+        i_wb_data = 32'b1;
+        #10
+        i_wb_data = 32'b0;
+        #10
+        i_wb_data = 32'b1;
+        #10
+        i_wb_data = 32'b0;
+        #10
+        i_wb_data = 32'b1;
+        #10
+        i_wb_data = 32'b0;
+        #10
+        i_wb_data = 32'b1;
+        #10
+        i_wb_data = 32'b0;
+        #10
+        i_wb_data = 32'b1;
+        #10
+        i_wb_data = 32'b0;
+        #10
+        i_wb_data = 32'b1;
+        #10
+        i_wb_data = 32'b0;
+        #10
+        i_wb_data = 32'b1;
+        #10
+        i_wb_data = 32'b0;
+        #10
+        i_wb_data = 32'b1;
+        #10
+        i_wb_data = 32'b0;
+        #10
+        i_wb_data = 32'b1;
+        #10
+        i_wb_data = 32'b0;
+        #10
+        i_wb_data = 32'b1;
+        #10
+        i_wb_data = 32'b0;
+        #10
+        i_wb_data = 32'b1;
+        #10
+        i_wb_data = 32'b0;
+        #10
+        i_wb_data = 32'b1;
+        #10
+        i_wb_data = 32'b0;
+        #10
+        i_wb_data = 32'b1;
+        #10
+        i_wb_data = 32'b0;
+        #10
+        i_wb_data = 32'b1;
+        #10
+        i_wb_data = 32'b0;
+        #10
+        i_wb_data = 32'b1;
+        #10
+        i_wb_data = 32'b0;
+        #10
+        i_wb_data = 32'b1;
+        #10
+        i_wb_data = 32'b0;
+        #10
+        i_wb_data = 32'b1;
+        #10
+        i_wb_data = 32'b0;
+        #10
+        i_wb_data = 32'b1;
+        #10
+        i_wb_data = 32'b0;
         #10
         i_wb_data = 32'b0;
         #10
@@ -195,15 +289,108 @@ module tb_signal_generator #(
         #10
         i_wb_data = 32'b0;
         #10
-
-        // Deja correr la simulación por un tiempo
-        #1000;
-
-        i_wb_addr = ENABLE_ADDRESS;
         i_wb_data = 32'b1;
-
-        // Deja correr la simulación por un tiempo
-        #40000;
+        #10
+        i_wb_data = 32'b0;
+        #10
+        i_wb_data = 32'b0;
+        #10
+        i_wb_data = 32'b1;
+        #10
+        i_wb_data = 32'b0;
+        #10
+        i_wb_data = 32'b1;
+        #10
+        i_wb_data = 32'b0;
+        #10
+        i_wb_data = 32'b1;
+        #10
+        i_wb_data = 32'b0;
+        #10
+        i_wb_data = 32'b1;
+        #10
+        i_wb_data = 32'b0;
+        #10
+        i_wb_data = 32'b1;
+        #10
+        i_wb_data = 32'b0;
+        #10
+        i_wb_data = 32'b1;
+        #10
+        i_wb_data = 32'b0;
+        #10
+        i_wb_data = 32'b1;
+        #10
+        i_wb_data = 32'b0;
+        #10
+        i_wb_data = 32'b1;
+        #10
+        i_wb_data = 32'b0;
+        #10
+        i_wb_data = 32'b1;
+        #10
+        i_wb_data = 32'b0;
+        #10
+        i_wb_data = 32'b1;
+        #10
+        i_wb_data = 32'b0;
+        #10
+        i_wb_data = 32'b1;
+        #10
+        i_wb_data = 32'b0;
+        #10
+        i_wb_data = 32'b1;
+        #10
+        i_wb_data = 32'b0;
+        #10
+        i_wb_data = 32'b1;
+        #10
+        i_wb_data = 32'b0;
+        #10
+        i_wb_data = 32'b1;
+        #10
+        i_wb_data = 32'b0;
+        #10
+        i_wb_data = 32'b1;
+        #10
+        i_wb_data = 32'b0;
+        #10
+        i_wb_data = 32'b1;
+        #10
+        i_wb_data = 32'b0;
+        #10
+        i_wb_data = 32'b1;
+        #10
+        i_wb_data = 32'b0;
+        #10
+        i_wb_data = 32'b1;
+        #10
+        i_wb_data = 32'b0;
+        #10
+        i_wb_data = 32'b1;
+        #10
+        i_wb_data = 32'b0;
+        #10
+        i_wb_data = 32'b1;
+        #10
+        i_wb_data = 32'b0;
+        #10
+        i_wb_data = 32'b1;
+        #10
+        i_wb_data = 32'b0;
+        #10
+        i_wb_data = 32'b1;
+        #10
+        i_wb_data = 32'b0;
+        #10
+        i_wb_data = 32'b1;
+        #10
+        i_wb_data = 32'b0;
+        #10
+        i_wb_data = 32'b1;
+        #10
+        i_wb_data = 32'b0;
+        #10
 
 
         i_wb_addr = ENABLE_ADDRESS;
