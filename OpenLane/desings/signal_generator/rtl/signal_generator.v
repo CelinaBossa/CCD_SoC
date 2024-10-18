@@ -221,7 +221,7 @@ always @(*) begin
 end
 
 always @(*) begin
-    if ((estado==SHIFT_CHARGES && ciclos==CICLOS_PHI_R) || (estado==PULSE_HPND) ||(estado==INITIAL_SETUP))
+    if ((estado==SHIFT_CHARGES && ciclos>=CICLOS_PHI_L  && ciclos <CICLOS_PHI_L+CICLOS_PHI_R) || (estado==PULSE_HPND) ||(estado==INITIAL_SETUP))
         o_phi_r =1;
     else 
         o_phi_r =0;    

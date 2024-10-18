@@ -143,6 +143,7 @@ module tb_signal_generator();
     	io_in[22] = 0;
         #40000;
         #40000;
+        /*
         io_in[22] = 1;
     	io_in[23] = 0;
     	#12;
@@ -150,8 +151,38 @@ module tb_signal_generator();
     	#4;
     	io_in[22] = 0;
     	#4;
+    	
+    	#360000;
+        io_in[22] = 1;
+    	io_in[23] = 0;
+    	#4;
+    	io_in[23] = 0;
+    	#4;
+    	io_in[23] = 1;
+    	#4;
+    	io_in[23] = 0;
+    	#4;
+    	io_in[22] = 0;
+    	#4;
+    	
+    	
+    	#390000;*/
+    	
+        io_in[22] = 1;
+    	io_in[23] = 1;
+    	#4;
+    	io_in[23] = 0;
+    	#4;
+    	io_in[23] = 0;
+    	#4;
+    	io_in[23] = 0;
+    	#4;
+    	io_in[22] = 0;
+    	#4;
+    	
+    	
         #1500000;
-
+	io_in[24] = 0;
     	
     	
     		
@@ -177,7 +208,7 @@ module tb_signal_generator();
         #40000;
         #40000;
         // Deshabilita la FSM
-        io_in[24] = 0;
+        
         
         // Fin de la simulación
         #100;
