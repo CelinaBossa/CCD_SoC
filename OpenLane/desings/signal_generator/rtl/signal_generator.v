@@ -320,8 +320,6 @@ assign i_f_select_mux = i_test ? i_f_select_wb : i_f_select ;
     analog_signal_generator #(.CICLOS_FORMAS_DE_ONDA(CICLOS_FORMAS_DE_ONDA))
      analog_signal_gen0 (
         .i_enable(i_enable_mux),
-        .i_phi_l2(o_phi_l2),
-        .i_phi_p(o_phi_p),
         .i_clock(i_clk_mux),
         .contador(contador), 
         .o_adc_start_conversion(adc_start_conversion)

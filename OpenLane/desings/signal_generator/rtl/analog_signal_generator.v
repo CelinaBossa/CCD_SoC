@@ -18,8 +18,6 @@
 module analog_signal_generator #(
     parameter       CICLOS_FORMAS_DE_ONDA = 8)
 (   input wire      i_enable,
-    input wire      i_phi_l2,
-    input wire      i_phi_p,
     input wire [31:0]  contador,
     input wire      i_clock, 
     output reg      o_adc_start_conversion
