@@ -1,35 +1,41 @@
 [*]
 [*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
-[*] Mon Jul 22 20:21:49 2024
+[*] Sat Oct 19 21:12:43 2024
 [*]
-[dumpfile] "/home/ivogc/tesis/OpenLane/desings/signal_generator/rtl/wf_signal_generator.vcd"
-[dumpfile_mtime] "Mon Jul 22 20:17:47 2024"
-[dumpfile_size] 5162010
-[savefile] "/home/ivogc/tesis/OpenLane/desings/signal_generator/rtl/waves.gtkw"
-[timestart] 8848150000
-[size] 1920 1009
-[pos] -1958 171
-*-21.730694 8854460000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[dumpfile] "/home/ivogc/tesis/CCD_SoC/OpenLane/desings/signal_generator/rtl/wf_signal_generator.vcd"
+[dumpfile_mtime] "Sat Oct 19 17:18:39 2024"
+[dumpfile_size] 254483011
+[savefile] "/home/ivogc/tesis/CCD_SoC/OpenLane/desings/signal_generator/rtl/waves.gtkw"
+[timestart] 0
+[size] 1680 1013
+[pos] 1832 -297
+*-35.643303 72400000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] tb_signal_generator.
+[treeopen] tb_signal_generator.dut.
 [sst_width] 273
-[signals_width] 230
+[signals_width] 250
 [sst_expanded] 1
-[sst_vpaned_height] 579
+[sst_vpaned_height] 582
+@28
+tb_signal_generator.dut.analog_signal_gen0.i_clock
+@29
+tb_signal_generator.dut.analog_signal_gen0.i_enable
 @24
-tb_signal_generator.dut.ciclos[1:0]
 tb_signal_generator.dut.contador[31:0]
 tb_signal_generator.dut.contador_waves[13:0]
 @28
 tb_signal_generator.dut.estado[1:0]
 tb_signal_generator.dut.sig_estado[1:0]
-tb_signal_generator.dut.i_clk
-tb_signal_generator.dut.i_enable
-@22
-tb_signal_generator.dut.i_f_select[3:0]
-@28
+[color] 2
 tb_signal_generator.dut.o_phi_l1
+[color] 2
 tb_signal_generator.dut.o_phi_l2
+[color] 2
 tb_signal_generator.dut.o_phi_r
+[color] 3
 tb_signal_generator.dut.o_phi_p
+[color] 6
+tb_signal_generator.dut.analog_signal_gen0.o_adc_start_conversion
+tb_signal_generator.dut.analog_signal_gen0.o_pixel_flag
 [pattern_trace] 1
 [pattern_trace] 0

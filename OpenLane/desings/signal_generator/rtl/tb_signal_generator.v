@@ -1,4 +1,4 @@
-`timescale 1ns/1ps
+`timescale 10ns/1ps
 
 
 // Global parameters
@@ -49,10 +49,11 @@
 `define DM_INIT 3'b001
 
 `include "signal_generator.v"
-
+`include "analog_signal_generator.v"
 
 module tb_signal_generator();
 
+    parameter CLK_PERIOD=25;
     
     // Señales de entrada
     wire i_enable;
@@ -128,63 +129,112 @@ module tb_signal_generator();
     // Generación del reloj
     initial begin
         io_in[25] = 0;
-        forever #2 io_in[25] = ~io_in[25]; 
+        forever #(CLK_PERIOD/2) io_in[25] = ~io_in[25]; 
     end
     
     initial begin 
     	io_in[26] = 0;
     	
-    	#30
+    	#30;
     	io_in[23] = 0;
     	io_in[22] = 1;
-    	#50;
     	
-    	#4;
+    	
+    	#(CLK_PERIOD*6);
     	io_in[22] = 0;
-        #40000;
-        #40000;
-        /*
+        #(28000*CLK_PERIOD);
+	
+	// freq_select = 4'd0
+        
         io_in[22] = 1;
     	io_in[23] = 0;
-    	#12;
+    	#(CLK_PERIOD*3);
     	io_in[23] = 1;
-    	#4;
+    	#CLK_PERIOD;
     	io_in[22] = 0;
-    	#4;
+    	#CLK_PERIOD;
     	
-    	#360000;
+    	// freq_select = 4'd1
+	#(40000*CLK_PERIOD);
+	
         io_in[22] = 1;
     	io_in[23] = 0;
-    	#4;
+    	#CLK_PERIOD;
     	io_in[23] = 0;
-    	#4;
+    	#CLK_PERIOD;
     	io_in[23] = 1;
-    	#4;
+    	#CLK_PERIOD;
     	io_in[23] = 0;
-    	#4;
+    	#CLK_PERIOD;
     	io_in[22] = 0;
-    	#4;
+    	#CLK_PERIOD;
     	
+    	// freq_select = 4'd2
+    	#(65000*CLK_PERIOD);
+    
+    	io_in[22] = 1;
+    	io_in[23] = 0;
+    	#CLK_PERIOD;
+    	io_in[23] = 1;
+    	#CLK_PERIOD;
+    	io_in[23] = 0;
+    	#CLK_PERIOD;
+    	io_in[23] = 1;
+    	#CLK_PERIOD;
+    	io_in[22] = 0;
+    	#CLK_PERIOD;
     	
-    	#390000;*/
-    	
+    	// freq_select = 4'd5
+        #(130000*CLK_PERIOD);
+        
         io_in[22] = 1;
     	io_in[23] = 1;
-    	#4;
+    	#CLK_PERIOD;
     	io_in[23] = 0;
-    	#4;
+    	#CLK_PERIOD;
     	io_in[23] = 0;
-    	#4;
+    	#CLK_PERIOD;
     	io_in[23] = 0;
-    	#4;
+    	#CLK_PERIOD;
     	io_in[22] = 0;
-    	#4;
+    	#CLK_PERIOD;
+    	
+    	// freq_select = 4'd8
+    	#(190000*CLK_PERIOD);
+    	
+    	io_in[22] = 1;
+    	io_in[23] = 1;
+    	#CLK_PERIOD;
+    	io_in[23] = 0;
+    	#CLK_PERIOD;
+    	io_in[23] = 1;
+    	#CLK_PERIOD;
+    	io_in[23] = 0;
+    	#CLK_PERIOD;
+    	io_in[22] = 0;
+    	#CLK_PERIOD;
+    	
+    	// freq_select = 4'd10
+    	#(240000*CLK_PERIOD);
     	
     	
-        #1500000;
+    	io_in[22] = 1;
+    	io_in[23] = 1;
+    	#CLK_PERIOD;
+    	io_in[23] = 1;
+    	#CLK_PERIOD;
+    	io_in[23] = 1;
+    	#CLK_PERIOD;
+    	io_in[23] = 1;
+    	#CLK_PERIOD;
+    	io_in[22] = 1;
+    	#CLK_PERIOD;
+    	
+    	// freq_select = 4'd15
+    	#(2*275000*CLK_PERIOD);
 	io_in[24] = 0;
     	
-    	
+    	$finish;
     		
     end
     
@@ -194,7 +244,7 @@ module tb_signal_generator();
         io_in[24] = 0;
         
         // Estimulación de la FSM
-        #10;
+        #(CLK_PERIOD*2);
         io_in[24] = 1;
         io_in[26] = 0;
 
@@ -212,7 +262,7 @@ module tb_signal_generator();
         
         // Fin de la simulación
         #100;
-        $finish;
+        
     end
     
     // Monitoreo de señales
